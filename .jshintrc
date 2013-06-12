@@ -1,0 +1,11 @@
+{
+  "boss": true, // Suppress warnings like `while (a = fn())`
+  "expr": true, // Suppress warnings like `a || (a = 1)`
+  "node": true, // Allow Node globals
+
+  "globals": {
+    // Mocha
+    "describe": false,
+    "it": false
+  }
+}
