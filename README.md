@@ -81,7 +81,7 @@ console.log(css);
 
 # ast
 
-The structure of mensch's AST riffs on several existing CSS Parsers, but it
+The structure of mensch's AST riffs on several existing CSS parsers, but it
 might not be 100% compatible with other CSS parsers. Here it is in a nutshell:
 
 ```js
