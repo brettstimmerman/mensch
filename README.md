@@ -99,3 +99,9 @@ might not be 100% compatible with other CSS parsers. Here it is in a nutshell:
   }
 }
 ```
+
+# credits
+
+Mensch is based on several existing CSS parsers, but
+[nzakas/parser-lib](https://github.com/nzakas/parser-lib) and
+[visionmedia/css](https://github.com/visionmedia/css) are notable influences.
