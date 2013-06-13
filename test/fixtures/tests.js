@@ -550,3 +550,55 @@ exports['nested @-groups'] = {
     }
   }]
 };
+
+
+// -- Position -----------------------------------------------------------------
+
+exports.position = {
+  css: '.foo { color: black; }',
+
+  lex: [{
+    type: "selector",
+    start: { line: 1, col: 1 },
+    text: ".foo",
+    end: { line: 1, col: 6}
+  },
+  {
+    type: "property",
+    name: "color",
+    value: "black",
+    start: { line :1, col: 8 },
+    end: { line: 1, col: 20 }
+  }, {
+    type: 'end',
+    start: { line: 1, col: 22 },
+    end: { line: 1, col: 22 }
+  }],
+
+  parse: [{
+    options: { position: true },
+
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: 'rule',
+          selectors: ['.foo'],
+          declarations: [{
+            type: 'property',
+            name: 'color',
+            value: 'black',
+            position: {
+              start: { line: 1, col: 8 },
+              end: { line: 1, col: 20 }
+            }
+          }],
+          position: {
+            start: { line: 1, col: 1 },
+            end: { line: 1, col: 6 }
+          }
+        }]
+      }
+    }
+  }]
+};

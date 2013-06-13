@@ -27,6 +27,20 @@ Convert a CSS string or an array of lexical tokens into a `stringify`-able AST.
 - `css` {String|Array} CSS string or array of lexical tokens
 - `[options]` {Object}
 - `[options.comments=false]` {Boolean} Allow comment nodes in the AST.
+- `[options.position=false]` {Boolean} Allow line/column position in the AST.
+
+When `{position: true}`, AST node will have a `position` property:
+
+```js
+{
+  type: 'comment',
+  text: ' Hello World! ',
+  position: {
+    start: { line: 1, col: 1 },
+    end: { line 1, col: 18 }
+  }
+}
+```
 
 ## stringify(ast, [options={}])
 
@@ -86,6 +100,7 @@ might not be 100% compatible with other CSS parsers. Here it is in a nutshell:
 
 ```js
 {
+  type: 'stylesheet'
   stylesheet: {
     rules: [{
       type: 'rule',
