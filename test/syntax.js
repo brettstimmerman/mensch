@@ -7,6 +7,21 @@ function ensure(css, expect) {
 }
 
 describe('Syntax', function () {
+  describe('strings in selectors, and braces in strings', function () {
+    it('should work', function () {
+      var css = [
+        'abbr[title*="{"] {',
+          'color: black;',
+        '}',
+        'abbr[title^="}"] {',
+          'color: red;',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+    });
+  });
+
   describe('unexpected braces and semi-colons', function () {
     it('should be ignored', function () {
       var css = [
