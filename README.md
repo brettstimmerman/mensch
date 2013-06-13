@@ -89,7 +89,7 @@ might not be 100% compatible with other CSS parsers. Here it is in a nutshell:
   stylesheet: {
     rules: [{
       type: 'rule',
-      selector: '.foo',
+      selectors: ['.foo'],
       declarations: [{
         type: 'property',
         name: 'color',

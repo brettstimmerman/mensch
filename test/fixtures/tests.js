@@ -55,7 +55,7 @@ var lexTokens = [{
 var stylesheet = {
   stylesheet: {
     rules: [{
-      selector: 'body',
+      selectors: ['body'],
       type: 'rule',
       declarations: [{
         type: 'property',
@@ -234,7 +234,7 @@ exports['@keyframes'] = {
           prefix: undefined,
           rules: [{
             type: 'rule',
-            selector: 'from',
+            selectors: ['from'],
             declarations: [{
                 name: 'opacity',
                 type: 'property',
@@ -242,7 +242,7 @@ exports['@keyframes'] = {
             }]
           }, {
             type: 'rule',
-            selector: 'to',
+            selectors: ['to'],
             declarations: [{
               name: 'opacity',
               type: 'property',
@@ -263,7 +263,7 @@ exports['@keyframes'] = {
           prefix: '-webkit-',
           rules: [{
             type: 'rule',
-            selector: 'from',
+            selectors: ['from'],
             declarations: [{
                 name: 'opacity',
                 type: 'property',
@@ -271,7 +271,7 @@ exports['@keyframes'] = {
             }]
           }, {
             type: 'rule',
-            selector: 'to',
+            selectors: ['to'],
             declarations: [{
               name: 'opacity',
               type: 'property',
@@ -324,7 +324,7 @@ exports['@media'] = {
           prefix: undefined,
           rules: [{
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               name: 'color',
               value: 'black',
@@ -377,7 +377,7 @@ exports['@supports'] = {
           prefix: undefined,
           rules: [{
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               name: 'color',
               value: 'black',

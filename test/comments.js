@@ -30,7 +30,7 @@ describe('Comments', function () {
             text: ' filibuster! '
           }, {
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               type: 'property',
               name: 'color',
@@ -49,7 +49,7 @@ describe('Comments', function () {
         stylesheet: {
           rules: [{
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               type: 'property',
               name: 'color',
@@ -71,7 +71,7 @@ describe('Comments', function () {
         stylesheet: {
           rules: [{
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               type: 'comment',
               text: ' filibuster! '
@@ -93,7 +93,7 @@ describe('Comments', function () {
         stylesheet: {
           rules: [{
             type: 'rule',
-            selector: 'body',
+            selectors: ['body'],
             declarations: [{
               type: 'property',
               name: 'color',
@@ -113,7 +113,7 @@ describe('Comments', function () {
       stylesheet: {
         rules: [{
           type: 'rule',
-          selector: 'body',
+          selectors: ['body'],
           declarations: [{
             type: 'property',
             name: 'color',
