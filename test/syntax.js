@@ -84,4 +84,50 @@ describe('Syntax', function () {
       ensure(css, expect);
     });
   });
+
+  describe('deep nesting of @-groups', function () {
+    it('is invalid, but should work', function () {
+      var css = [
+        '@supports (display: border-box) {',
+          '.foo {',
+            'color: red;',
+          '}',
+          '@media print {',
+            '.foo {',
+              'color: black;',
+            '}',
+            '@supports (display: table) {',
+              '.foo {',
+                'color: blue;',
+              '}',
+            '}',
+          '}',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+    });
+  });
+
+
+  describe('pseudo-classes within @media blocks', function () {
+    it('should work', function () {
+      var css = [
+        '@media screen and (max-width: 700px) {',
+          '.nav a {',
+            'display: block;',
+          '}',
+          '.nav a:hover {',
+            'text-decoration: none;',
+          '}',
+          '.nav a:focus {',
+            'text-decoration: underline;',
+          '}',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+    });
+  });
+
 });
