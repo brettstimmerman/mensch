@@ -10,6 +10,7 @@ describe('Comments', function () {
       var ast = mensch.parse(css, options);
 
       assert.deepEqual(ast, {
+        type: "stylesheet",
         stylesheet: {
           rules: [{
             type: 'comment',
@@ -24,6 +25,7 @@ describe('Comments', function () {
       var ast = mensch.parse(css, options);
 
       assert.deepEqual(ast, {
+        type: "stylesheet",
         stylesheet: {
           rules: [{
             type: 'comment',
@@ -46,6 +48,7 @@ describe('Comments', function () {
       var ast = mensch.parse(css, options);
 
       assert.deepEqual(ast, {
+        type: "stylesheet",
         stylesheet: {
           rules: [{
             type: 'rule',
@@ -68,6 +71,7 @@ describe('Comments', function () {
       var ast = mensch.parse(css, options);
 
       assert.deepEqual(ast, {
+        type: "stylesheet",
         stylesheet: {
           rules: [{
             type: 'rule',
@@ -90,6 +94,7 @@ describe('Comments', function () {
       var ast = mensch.parse(css, options);
 
       assert.deepEqual(ast, {
+        type: "stylesheet",
         stylesheet: {
           rules: [{
             type: 'rule',
@@ -110,6 +115,7 @@ describe('Comments', function () {
 
   describe('are not supported when', function () {
     var expect = {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'rule',

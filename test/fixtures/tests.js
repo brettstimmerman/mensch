@@ -16,6 +16,7 @@ exports.comment = {
     options: { comments: true },
 
     expect : {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'comment',
@@ -25,7 +26,12 @@ exports.comment = {
     }
   }, {
     options: {},
-    expect: { stylesheet: { rules: [] } }
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: []
+      }
+    }
   }],
 
   stringify: {
@@ -53,6 +59,7 @@ var lexTokens = [{
   }];
 
 var stylesheet = {
+  type: "stylesheet",
   stylesheet: {
     rules: [{
       selectors: ['body'],
@@ -93,6 +100,7 @@ exports['@charset'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'charset',
@@ -117,6 +125,7 @@ exports['@import'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'import',
@@ -161,6 +170,7 @@ exports['@font-face'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'font-face',
@@ -227,6 +237,7 @@ exports['@keyframes'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'keyframes',
@@ -256,6 +267,7 @@ exports['@keyframes'] = {
     css: '@-webkit-keyframes foo { from { opacity: 0; } to { opacity: 1; } }',
 
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'keyframes',
@@ -317,6 +329,7 @@ exports['@media'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           name: 'screen and (min-width: 700px)',
@@ -370,6 +383,7 @@ exports['@supports'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           name: '(display: table-cell)',
@@ -418,6 +432,7 @@ exports['@viewport'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'viewport',
@@ -505,6 +520,7 @@ exports['nested @-groups'] = {
 
   parse: [{
     expect: {
+      type: "stylesheet",
       stylesheet: {
         rules: [{
           type: 'media',
