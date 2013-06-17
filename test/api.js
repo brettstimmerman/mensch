@@ -32,7 +32,7 @@ function testStringify(name) {
 }
 
 function fixup(css) {
-  return css.replace(/\n+/g, ' ').replace(/[ ]{2,}/g, '');
+  return css.replace(/\n+/g, ' ').replace(/[ ]{2,}/g, '').trim();
 }
 
 // -----------------------------------------------------------------------------
@@ -79,9 +79,9 @@ describe('API', function () {
       ].join('\n');
 
       var ast = mensch.parse(css);
-      var str = mensch.stringify(ast, {indentation: '  '});
+      var out = mensch.stringify(ast, {indentation: '  '});
 
-      assert.equal(str, css);
+      assert.equal(out, css);
     });
   });
 });

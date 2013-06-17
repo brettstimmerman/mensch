@@ -139,7 +139,7 @@ exports['@import'] = {
 // -- @font-face ---------------------------------------------------------------
 
 exports['@font-face'] = {
-  css: '@font-face { font-family: Gentium; src: url(http://example.com/fonts/Gentium.ttf); }',
+  css: '@font-face { font-family: Gentium; src: url(http://example.com/fonts/Gentium.ttf);}',
 
   lex: [{
     type: 'font-face',
@@ -160,12 +160,12 @@ exports['@font-face'] = {
     end: { col: 73, line: 1 }
   }, {
     type: 'end',
-    start: { col: 75, line: 1 },
-    end: { col: 75, line: 1 }
+    start: { col: 74, line: 1 },
+    end: { col: 74, line: 1 }
   }, {
     type: 'at-group-end',
-    start: { col: 75, line: 1 },
-    end: { col: 75, line: 1 }
+    start: { col: 74, line: 1 },
+    end: { col: 74, line: 1 }
   }],
 
   parse: [{
@@ -407,7 +407,7 @@ exports['@supports'] = {
 // -- @viewport ----------------------------------------------------------------
 
 exports['@viewport'] = {
-  css: '@viewport { width: 320px auto; }',
+  css: '@viewport { width: 320px auto;}',
 
   lex: [{
     type: 'viewport',
@@ -422,12 +422,12 @@ exports['@viewport'] = {
     end: { col: 22, line: 1 }
   }, {
     type: 'end',
-    start: { col: 24, line: 1 },
-    end: { col: 24, line: 1 }
+    start: { col: 23, line: 1 },
+    end: { col: 23, line: 1 }
   }, {
     type: 'at-group-end',
-    start: { col: 24, line: 1 },
-    end: { col: 24, line: 1 }
+    start: { col: 23, line: 1 },
+    end: { col: 23, line: 1 }
   }],
 
   parse: [{

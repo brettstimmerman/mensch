@@ -3,7 +3,11 @@ var mensch = require('..');
 
 function ensure(css, expect) {
   var ast = mensch.parse(css);
-  assert.equal(mensch.stringify(ast), expect || css);
+  var out = mensch.stringify(ast).trim();
+
+  expect || (expect = css.trim());
+
+  assert.equal(out, expect);
 }
 
 describe('Syntax', function () {
@@ -13,6 +17,7 @@ describe('Syntax', function () {
         'abbr[title*="{"] {',
           'color: black;',
         '}',
+        '',
         'abbr[title^="}"] {',
           'color: red;',
         '}'
@@ -29,6 +34,7 @@ describe('Syntax', function () {
           'font-size: small;',
         '}',
         '}', // <- unexpected
+        '',
         'h2 {',
           '{', // <- unexpected
           'color: red;;', // <- extra semi-colon
@@ -48,6 +54,7 @@ describe('Syntax', function () {
     it('should be injected', function () {
       var css = [
         '@import "foo.css" print', // <- missing semi-colon
+        '',
         'body {',
           'color: black;',
         '}'
@@ -59,6 +66,7 @@ describe('Syntax', function () {
 
       css = [
         '@charset "utf-8"', // <- missing semi-colon
+        '',
         'body {',
           'color: black;',
         '}'
@@ -92,15 +100,19 @@ describe('Syntax', function () {
           '.foo {',
             'color: red;',
           '}',
+          '',
           '@media print {',
             '.foo {',
               'color: black;',
             '}',
+            '',
             '@supports (display: table) {',
               '.foo {',
                 'color: blue;',
               '}',
+              '',
             '}',
+            '',
           '}',
         '}'
       ].join('\n');
@@ -117,9 +129,11 @@ describe('Syntax', function () {
           '.nav a {',
             'display: block;',
           '}',
+          '',
           '.nav a:hover {',
             'text-decoration: none;',
           '}',
+          '',
           '.nav a:focus {',
             'text-decoration: underline;',
           '}',
