@@ -1,5 +1,9 @@
 # mensch history
 
+## 0.2.0 - 18 Sep 2013
+
+- Correctly handle comments as children of at-groups. Fix #2
+
 ## 0.1.0 - 17 Jun 2013
 
 - Added new boolean `position` option to `parse()`, which will include position
