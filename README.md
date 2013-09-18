@@ -1,4 +1,4 @@
-# mensch
+# mensch [![Build Status](https://secure.travis-ci.org/brettstimmerman/mensch.png?branch=master)](http://travis-ci.org/brettstimmerman/mensch)
 
 A decent CSS parser.
 
