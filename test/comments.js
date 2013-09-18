@@ -111,6 +111,47 @@ describe('Comments', function () {
         }
       });
     });
+
+    it('inside an at-group', function () {
+      var css = [
+        '@media (max-width: 1024) {',
+        '/* boom! */',
+        '',
+        '.foo {',
+        'color: blue;',
+        '}',
+        '}'
+      ].join('\n');
+
+      var ast = mensch.parse(css, options);
+
+      assert.deepEqual(ast, {
+        type: 'stylesheet',
+        stylesheet: {
+          rules: [{
+            type: 'media',
+            name: '(max-width: 1024)',
+            prefix: undefined,
+            rules: [{
+              type: 'comment',
+              text: ' boom! '
+            }, {
+              type: 'rule',
+              selectors: ['.foo'],
+              declarations: [{
+                type: 'property',
+                name: 'color',
+                value: 'blue'
+              }]
+            }]
+          }]
+        }
+      });
+
+      var out = mensch.stringify(ast, options);
+
+      assert.equal(out, css);
+    });
   });
 
   describe('are not supported when', function () {
