@@ -1,0 +1,7 @@
+.gitignore
+.jshintrc
+.npmignore
+.travis.yml
+Makefile
+test/
+tools/
