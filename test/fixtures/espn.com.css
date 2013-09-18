@@ -527,7 +527,7 @@ content: '';
 content: none;
 }
 
-: focus {
+:focus {
 outline: 0;
 }
 
@@ -561,7 +561,7 @@ text-decoration: none;
 color: #225db7;
 }
 
-a: hover {
+a:hover {
 text-decoration: underline;
 }
 
@@ -1393,11 +1393,11 @@ margin-top: 140px;
 }
 
 .ui-dialog-titlebar-close-hover,
-.ui-dialog-titlebar-close: hover {
+.ui-dialog-titlebar-close:hover {
 background: url("http://a2.espncdn.com/i/insider/ui_dialog_modal/ul-dialog-nothanks-hover.gif") 0 0 no-repeat;
 }
 
-.ui-dialog-titlebar-close: active {
+.ui-dialog-titlebar-close:active {
 background: url("http://a1.espncdn.com/i/insider/ui_dialog_modal/ul-dialog-nothanks.gif") 0 0 no-repeat;
 }
 
@@ -1433,14 +1433,14 @@ font-size: 13px;
 width: 325px;
 }
 
-.ui-dialog-content a: link,
-.ui-dialog-content a: visited {
+.ui-dialog-content a:link,
+.ui-dialog-content a:visited {
 color: #fff;
 font-weight: bold;
 text-decoration: none;
 }
 
-.ui-dialog-content a: hover {
+.ui-dialog-content a:hover {
 color: #fff;
 text-decoration: underline;
 }
@@ -1681,7 +1681,7 @@ text-decoration: none;
 padding-left: 10px;
 }
 
-.mod-footer a: hover {
+.mod-footer a:hover {
 text-decoration: underline;
 }
 
@@ -1753,7 +1753,7 @@ margin: 0;
 color: #225db7;
 }
 
-.mod-content a: visited {
+.mod-content a:visited {
 color: #608fd6!important;
 }
 
@@ -1850,7 +1850,7 @@ ul.blk-links a {
 color: #000!important;
 }
 
-ul.blk-links a: visited {
+ul.blk-links a:visited {
 color: #888!important;
 }
 
@@ -1955,7 +1955,7 @@ font-size: 1px;
 display: inline-block;
 }
 
-.mod-breaking-news a.close: hover {
+.mod-breaking-news a.close:hover {
 background-position: 0 -15px;
 text-decoration: none;
 }
@@ -2352,7 +2352,7 @@ padding: 0 0 10px 0;
 border-bottom: 1px #DDD solid;
 }
 
-.mod-sn-highlight .mod-content .col-full a: hover {
+.mod-sn-highlight .mod-content .col-full a:hover {
 text-decoration: underline;
 }
 
@@ -2382,7 +2382,7 @@ margin-top: 10px;
 }
 
 .mod-jump-menu .mod-content a,
-.mod-jump-menu .mod-content a: visited {
+.mod-jump-menu .mod-content a:visited {
 color: #444!important;
 }
 
@@ -2417,7 +2417,7 @@ display: block;
 padding: 2px 0 3px 5px;
 }
 
-.mod-jump-menu .mod-content a: hover {
+.mod-jump-menu .mod-content a:hover {
 color: #225db7!important;
 text-decoration: underline;
 }
@@ -2591,7 +2591,7 @@ font-weight: 700;
 line-height: 22px;
 }
 
-.mod-accordion a.mod-accordion-trigger: hover {
+.mod-accordion a.mod-accordion-trigger:hover {
 text-decoration: underline;
 }
 
@@ -2600,12 +2600,12 @@ background: #fff url(http://a2.espncdn.com/prod/assets/module_accordion_arrow_on
 color: #454545;
 }
 
-.mod-accordion a.mod-accordion-trigger.active: hover {
+.mod-accordion a.mod-accordion-trigger.active:hover {
 text-decoration: none;
 }
 
-.ie6 .mod-accordion a.mod-accordion-trigger: visited,
-.ie6 .mod-accordion a.mod-accordion-trigger.active: visited {
+.ie6 .mod-accordion a.mod-accordion-trigger:visited,
+.ie6 .mod-accordion a.mod-accordion-trigger.active:visited {
 color: #454545!important;
 }
 
@@ -2714,7 +2714,7 @@ font-weight: normal;
 border-top: 2px solid #fff;
 }
 
-.mod-accordion div.mod-sub-accordion a.mod-sub-accordion-trigger: hover {
+.mod-accordion div.mod-sub-accordion a.mod-sub-accordion-trigger:hover {
 text-decoration: underline;
 }
 
@@ -2862,8 +2862,8 @@ font-weight: 400;
 font-size: 11px;
 }
 
-.mod-tabs .mod-header ul li a: hover,
-.mod-tabs ul.ui-tabs-nav li a: hover {
+.mod-tabs .mod-header ul li a:hover,
+.mod-tabs ul.ui-tabs-nav li a:hover {
 text-decoration: underline;
 }
 
@@ -2873,8 +2873,8 @@ font-family: verdana,sans-serif;
 color: #225db7;
 }
 
-.mod-tabs-section .mod-header ul li a: hover,
-.mod-tabs-section ul.ui-tabs-nav li a: hover {
+.mod-tabs-section .mod-header ul li a:hover,
+.mod-tabs-section ul.ui-tabs-nav li a:hover {
 text-decoration: underline;
 }
 
@@ -2986,7 +2986,7 @@ font-size: 10px;
 padding: 0 0 0 14px;
 }
 
-.mod-tabs .tab-link a: hover {
+.mod-tabs .tab-link a:hover {
 text-decoration: underline;
 }
 
@@ -3172,11 +3172,11 @@ color: #aaa;
 color: #000;
 }
 
-.mod-tabs ul.headlines li a: visited {
+.mod-tabs ul.headlines li a:visited {
 color: #888!important;
 }
 
-.mod-tabs ul.headlines li a: hover {
+.mod-tabs ul.headlines li a:hover {
 color: #225db7!important;
 }
 
@@ -3963,7 +3963,7 @@ clear: both;
 color: #225fb2;
 }
 
-.mod-conversations a: hover {
+.mod-conversations a:hover {
 color: #225fb2;
 }
 
@@ -4819,13 +4819,13 @@ height: 90px;
 background: #000;
 }
 
-#top-stories .mod-carousel ul li div a: hover,
-#top-stories .mod-carousel .jcarousel-list li div a: hover {
+#top-stories .mod-carousel ul li div a:hover,
+#top-stories .mod-carousel .jcarousel-list li div a:hover {
 text-decoration: none;
 }
 
-#top-stories .mod-carousel ul li div a: hover img,
-#top-stories .mod-carousel .jcarousel-list li div a: hover img {
+#top-stories .mod-carousel ul li div a:hover img,
+#top-stories .mod-carousel .jcarousel-list li div a:hover img {
 opacity: .5;
 filter: alpha(opacity=50);
 }
@@ -4857,8 +4857,8 @@ display: none;
 color: #ababab;
 }
 
-#top-stories .mod-carousel ul li div a: hover h3 span,
-#top-stories .mod-carousel .jcarousel-list li div a: hover h3 span {
+#top-stories .mod-carousel ul li div a:hover h3 span,
+#top-stories .mod-carousel .jcarousel-list li div a:hover h3 span {
 display: block;
 }
 
@@ -4907,7 +4907,7 @@ background-position: -125px 50%;
 height: 98px;
 }
 
-.jcarousel-next: hover {
+.jcarousel-next:hover {
 background-position: -100px 50%;
 }
 
@@ -4920,7 +4920,7 @@ height: 95px;
 background-position: -75px 50%;
 }
 
-.jcarousel-next-disabled: hover {
+.jcarousel-next-disabled:hover {
 background-position: -75px 50%;
 cursor: default;
 }
@@ -4934,7 +4934,7 @@ background-position: 0 50%;
 height: 98px;
 }
 
-.jcarousel-prev: hover {
+.jcarousel-prev:hover {
 background-position: -25px 50%;
 }
 
@@ -4947,7 +4947,7 @@ height: 95px;
 background-position: -50px 50%;
 }
 
-.jcarousel-prev-disabled: hover {
+.jcarousel-prev-disabled:hover {
 background-position: -50px 50%;
 cursor: default;
 }
@@ -5075,7 +5075,7 @@ height: 324px;
 color: #76a7d6;
 }
 
-.top-story-headline a: visited {
+.top-story-headline a:visited {
 color: #b2d0ed!important;
 }
 
@@ -6292,7 +6292,7 @@ width: 424px;
 display: block;
 }
 
-.mod-article-title .subhead .insider a: hover {
+.mod-article-title .subhead .insider a:hover {
 text-decoration: none;
 }
 
@@ -6543,7 +6543,7 @@ margin: 0 4px 0 0;
 float: left;
 }
 
-.mod-page-actions li a .label: hover {
+.mod-page-actions li a .label:hover {
 text-decoration: underline;
 }
 
@@ -7127,7 +7127,7 @@ padding: 16px;
 border-width: 0;
 }
 
-.mod-page-header .mod-content a: visited {
+.mod-page-header .mod-content a:visited {
 color: #225db7!important;
 }
 
@@ -7332,12 +7332,12 @@ background: transparent url(http://a1.espncdn.com/prod/assets/carousel-scrollers
 background-position: -126px 50%;
 }
 
-.mod-page-header .more-dates a.next: hover {
+.mod-page-header .more-dates a.next:hover {
 text-decoration: none;
 background-position: -101px 50%;
 }
 
-.mod-page-header .more-dates a.prev: hover {
+.mod-page-header .more-dates a.prev:hover {
 text-decoration: none;
 background-position: -25px 50%;
 }
@@ -7364,7 +7364,7 @@ text-decoration: none;
 background: #fff url(http://a1.espncdn.com/prod/assets/calendar/calendar_carousel_day_bg.jpg) 0 0 repeat-x;
 }
 
-.mod-page-header .more-dates ul li a: hover {
+.mod-page-header .more-dates ul li a:hover {
 text-decoration: none;
 background-image: none;
 background-color: #b2cef7;
@@ -7507,7 +7507,7 @@ color: #5d5d5d;
 position: relative;
 }
 
-.mod-scorebox .game-header .game-header-table tr td.team-name a: hover {
+.mod-scorebox .game-header .game-header-table tr td.team-name a:hover {
 text-decoration: none;
 }
 
@@ -7515,7 +7515,7 @@ text-decoration: none;
 zoom: 1;
 }
 
-.mod-scorebox .game-header .game-header-table tr td.team-name a: visited {
+.mod-scorebox .game-header .game-header-table tr td.team-name a:visited {
 color: #888!important;
 }
 
@@ -8909,7 +8909,7 @@ color: #999;
 font-weight: normal;
 }
 
-.mod-inline.image .enlarge: hover {
+.mod-inline.image .enlarge:hover {
 text-decoration: none;
 }
 
@@ -9289,7 +9289,7 @@ display: block;
 color: #444;
 }
 
-.mod-video-playlist ul.bulletlinks li.active a: hover {
+.mod-video-playlist ul.bulletlinks li.active a:hover {
 text-decoration: none;
 }
 
@@ -9358,7 +9358,7 @@ cursor: pointer;
 z-index: 3;
 }
 
-.vid-thumb: hover img {
+.vid-thumb:hover img {
 opacity: .5;
 filter: alpha(opacity=50);
 float: left;
@@ -9445,7 +9445,7 @@ left: 10px;
 background: transparent url(http://a2.espncdn.com/prod/assets/calendar/cal_prev_next_sprite.png) 0 50% no-repeat;
 }
 
-.cal-nav-container .cal-nav-year a.prev: hover {
+.cal-nav-container .cal-nav-year a.prev:hover {
 background-position: -13px 50%;
 }
 
@@ -9457,7 +9457,7 @@ right: 10px;
 background: transparent url(http://a1.espncdn.com/prod/assets/calendar/cal_prev_next_sprite.png) -26px 50% no-repeat;
 }
 
-.cal-nav-container .cal-nav-year a.next: hover {
+.cal-nav-container .cal-nav-year a.next:hover {
 background-position: -39px 50%;
 }
 
@@ -9512,7 +9512,7 @@ left: 10px;
 background: transparent url(http://a1.espncdn.com/prod/assets/calendar/cal_prev_next_sprite.png) 0 50% no-repeat;
 }
 
-.cal-nav-container .cal-months-container table.cal-prev tr.cal-month-name th a: hover {
+.cal-nav-container .cal-months-container table.cal-prev tr.cal-month-name th a:hover {
 background-position: -13px 50%;
 }
 
@@ -9524,7 +9524,7 @@ right: 10px;
 background: transparent url(http://a1.espncdn.com/prod/assets/calendar/cal_prev_next_sprite.png) -26px 50% no-repeat;
 }
 
-.cal-nav-container .cal-months-container table.cal-next tr.cal-month-name th a: hover {
+.cal-nav-container .cal-months-container table.cal-next tr.cal-month-name th a:hover {
 background-position: -39px 50%;
 }
 
@@ -9547,7 +9547,7 @@ border: 2px solid #fff;
 color: #225db7;
 }
 
-.cal-nav-container .cal-months-container table td a: hover {
+.cal-nav-container .cal-months-container table td a:hover {
 background: #e0e9f0;
 border-color: #e0e9f0;
 text-decoration: none;
@@ -9625,7 +9625,7 @@ display: block;
 font-weight: 700;
 }
 
-#member-services div.member-services-links a: hover {
+#member-services div.member-services-links a:hover {
 color: #225db7;
 }
 
@@ -10161,12 +10161,12 @@ div.mod-scoreboard-carousel a.next {
 background-position: -101px 50%;
 }
 
-div.mod-scoreboard-carousel a.next: hover {
+div.mod-scoreboard-carousel a.next:hover {
 text-decoration: none;
 background-position: -126px 50%;
 }
 
-div.mod-scoreboard-carousel a.prev: hover {
+div.mod-scoreboard-carousel a.prev:hover {
 text-decoration: none;
 background-position: -25px 50%;
 }
@@ -10196,7 +10196,7 @@ text-decoration: none;
 background: #fff url(http://a1.espncdn.com/prod/assets/calendar/calendar_carousel_day_bg.jpg) 0 0 repeat-x;
 }
 
-div.mod-scoreboard-carousel ul li a: hover,
+div.mod-scoreboard-carousel ul li a:hover,
 div.mod-scoreboard-carousel ul li a.hover {
 text-decoration: none;
 background-image: none;
@@ -11297,7 +11297,7 @@ cursor: pointer;
 color: #444;
 }
 
-body.sitemap h5: hover {
+body.sitemap h5:hover {
 text-decoration: underline;
 }
 
@@ -11477,7 +11477,7 @@ float: right;
 background-position: 0 -16px;
 }
 
-.mod-twitter .tweet-icon-reply: hover {
+.mod-twitter .tweet-icon-reply:hover {
 background-position: 0 -32px;
 text-decoration: none;
 }
@@ -11486,12 +11486,12 @@ text-decoration: none;
 background-position: 0 -48px;
 }
 
-.mod-twitter .tweet-icon-favorite: hover {
+.mod-twitter .tweet-icon-favorite:hover {
 background-position: 0 -64px;
 text-decoration: none;
 }
 
-.mod-twitter .tweet-icon-favorite: active,
+.mod-twitter .tweet-icon-favorite:active,
 .mod-twitter .tweet-icon-favorite.active {
 background-position: 0 -80px;
 text-decoration: none;
@@ -11501,12 +11501,12 @@ text-decoration: none;
 background-position: 0 -96px;
 }
 
-.mod-twitter .tweet-icon-retweet: hover {
+.mod-twitter .tweet-icon-retweet:hover {
 background-position: 0 -112px;
 text-decoration: none;
 }
 
-.mod-twitter .tweet-icon-retweet: active,
+.mod-twitter .tweet-icon-retweet:active,
 .mod-twitter .tweet-icon-retweet.active {
 background-position: 0 -128px;
 text-decoration: none;
@@ -11520,15 +11520,15 @@ padding: 6px 8px 6px 0!important;
 line-height: 16px;
 }
 
-.mod-twitter a.tweet-icon-stamp: hover,
-.mod-twitter a.tweet-icon-stamp: hover .timestamp {
+.mod-twitter a.tweet-icon-stamp:hover,
+.mod-twitter a.tweet-icon-stamp:hover .timestamp {
 color: #225db7;
 }
 
-.mod-twitter a: hover .timeline,
-.mod-twitter a: active .timeline,
-.mod-twitter a: visited .timeline,
-.mod-twitter a: hover .timeline {
+.mod-twitter a:hover .timeline,
+.mod-twitter a:active .timeline,
+.mod-twitter a:visited .timeline,
+.mod-twitter a:hover .timeline {
 color: #8c8c8c;
 }
 
@@ -11772,7 +11772,7 @@ background: url(http://a1.espncdn.com/prod/assets/trans_border.png) 0 18px repea
 margin-bottom: -3px;
 }
 
-#header .top-bar .nav-edition ul.main li a: hover {
+#header .top-bar .nav-edition ul.main li a:hover {
 text-decoration: none;
 color: #FFF;
 border-bottom: 3px #FFF solid!important;
@@ -11802,7 +11802,7 @@ color: #666;
 top: 3px;
 }
 
-#header .top-bar .nav-edition ul.main li.dropdown ul: hover {
+#header .top-bar .nav-edition ul.main li.dropdown ul:hover {
 background: #FFF;
 border: 1px #CCC solid;
 padding-bottom: 6px;
@@ -11827,7 +11827,7 @@ padding: 3px 6px;
 color: #CCC;
 }
 
-#header .top-bar .nav-edition ul.main li.dropdown ul: hover li.selected {
+#header .top-bar .nav-edition ul.main li.dropdown ul:hover li.selected {
 color: #515151;
 background-position: 106px -54px;
 }
@@ -11840,7 +11840,7 @@ cursor: pointer;
 margin-bottom: 0;
 }
 
-#header .top-bar .nav-edition ul.main li.dropdown ul li a: hover {
+#header .top-bar .nav-edition ul.main li.dropdown ul li a:hover {
 background: #de0808;
 text-decoration: none;
 color: #FFF;
@@ -11873,7 +11873,7 @@ font-weight: bold;
 color: #FFF;
 }
 
-#header .top-bar .signin a: hover {
+#header .top-bar .signin a:hover {
 color: #FFF;
 }
 
@@ -11906,7 +11906,7 @@ float: left;
 margin-right: 10px;
 }
 
-#header .espn-logo a: hover {
+#header .espn-logo a:hover {
 text-decoration: none;
 }
 
@@ -11987,7 +11987,7 @@ text-decoration: none;
 font-weight: bold;
 }
 
-#live-now a: hover {
+#live-now a:hover {
 text-decoration: underline;
 }
 
@@ -12279,8 +12279,8 @@ color: #000;
 background: #FFF;
 }
 
-#nav-main ul.top li.hover a: hover,
-#nav-main ul.top li.hover a: hover span {
+#nav-main ul.top li.hover a:hover,
+#nav-main ul.top li.hover a:hover span {
 color: #225db7;
 }
 
@@ -12319,7 +12319,7 @@ font-family: Verdana,Geneva,sans-serif;
 font-weight: normal;
 }
 
-#nav-main ul.top li.btn-add-sport a: hover,
+#nav-main ul.top li.btn-add-sport a:hover,
 #nav-main ul.top li.btn-add-sport.hover a {
 background: #333!important;
 color: #FFF;
@@ -12401,11 +12401,11 @@ text-align: left;
 cursor: pointer;
 }
 
-#nav-main ul.top li .wrapper a: visited {
+#nav-main ul.top li .wrapper a:visited {
 color: #225db7!important;
 }
 
-#nav-main ul.top li .wrapper a: hover {
+#nav-main ul.top li .wrapper a:hover {
 text-decoration: underline;
 }
 
@@ -12896,7 +12896,7 @@ line-height: 14px;
 height: 1%;
 }
 
-#nav-main ul.top li .wrapper .mod-md-menu .mod-content ul li a: hover {
+#nav-main ul.top li .wrapper .mod-md-menu .mod-content ul li a:hover {
 background: #225db7;
 color: #FFF!important;
 text-decoration: none;
@@ -12927,7 +12927,7 @@ color: #666;
 display: block;
 }
 
-#nav-main ul.top li .wrapper .mod-md-menu .mod-content a.logo-sportscenter: hover {
+#nav-main ul.top li .wrapper .mod-md-menu .mod-content a.logo-sportscenter:hover {
 padding: 4px 6px;
 margin: 0 0 6px;
 background: #e4e4e4;
@@ -12958,7 +12958,7 @@ clear: right;
 margin-bottom: 0;
 }
 
-#nav-main ul.top li .wrapper .mod-md-menu-sub .mod-content ul li a: hover {
+#nav-main ul.top li .wrapper .mod-md-menu-sub .mod-content ul li a:hover {
 text-decoration: underline;
 }
 
@@ -13309,8 +13309,8 @@ background: transparent url(http://a1.espncdn.com/icons/in.gif) no-repeat scroll
 padding: 0 16px 0 6px;
 }
 
-#nav-main ul li div ul li a.insider: hover,
-li.expandable div dl dd a.insider: hover {
+#nav-main ul li div ul li a.insider:hover,
+li.expandable div dl dd a.insider:hover {
 background: #225db7 url(http://a1.espncdn.com/icons/in.gif) 99% 52% no-repeat!important;
 }
 
@@ -13363,7 +13363,7 @@ padding: 0 8px 0 7px;
 position: relative;
 }
 
-.nav-main-secondary ul li a: hover {
+.nav-main-secondary ul li a:hover {
 text-decoration: underline;
 }
 
@@ -13377,7 +13377,7 @@ padding-right: 14px!important;
 color: #000;
 }
 
-.nav-main-secondary ul li.active a: hover {
+.nav-main-secondary ul li.active a:hover {
 text-decoration: none;
 }
 
@@ -13452,7 +13452,7 @@ color: #000;
 background: transparent url(http://a2.espncdn.com/prod/assets/nav-menu-item-right.png) top right no-repeat;
 }
 
-.secondary-nav ul li: hover div,
+.secondary-nav ul li:hover div,
 .secondary-nav ul li.hover div {
 left: auto;
 }
@@ -13504,7 +13504,7 @@ vertical-align: middle;
 background: transparent!important;
 }
 
-.secondary-nav ul li div ul li a: hover {
+.secondary-nav ul li div ul li a:hover {
 background-color: #d3d3d3!important;
 color: #225db7!important;
 }
@@ -13629,8 +13629,8 @@ background-image: none!important;
 background-color: transparent;
 }
 
-li.expandable div ul li a: hover,
-li.expandable div dl dd a: hover {
+li.expandable div ul li a:hover,
+li.expandable div dl dd a:hover {
 color: #fff!important;
 background-color: #225db7;
 background-image: none!important;
@@ -13676,7 +13676,7 @@ margin-right: 5px;
 text-decoration: none;
 }
 
-#nav-main ul.top li .wrapper .mod-container #myespn-save-button: visited {
+#nav-main ul.top li .wrapper .mod-container #myespn-save-button:visited {
 color: white!important;
 }
 
@@ -13900,7 +13900,7 @@ margin: 10px 0;
 text-decoration: none;
 }
 
-.mod-insider-enhanced .mod-content .signin .login .sub-links li a: hover {
+.mod-insider-enhanced .mod-content .signin .login .sub-links li a:hover {
 text-decoration: underline;
 }
 
@@ -13984,7 +13984,7 @@ margin: 0 0 0 10px;
 }
 
 .mod-insider-enhanced.purchase .mod-content .signin .activate ul {
-padding0;
+padding: 0;
 }
 
 .mod-insider-enhanced.purchase .mod-content .signin .activate ul.term-select {
@@ -14267,16 +14267,16 @@ color: #aaa;
 display: none;
 }
 
-.mod-mem-carousel ul li a: hover {
+.mod-mem-carousel ul li a:hover {
 text-decoration: none;
 }
 
-.mod-mem-carousel ul li a: hover h3 span {
+.mod-mem-carousel ul li a:hover h3 span {
 display: block;
 }
 
 .mod-mem-carousel ul li.active a img,
-.mod-mem-carousel ul li a: hover img {
+.mod-mem-carousel ul li a:hover img {
 opacity: .5;
 filter: alpha(opacity=50);
 }
@@ -14304,7 +14304,7 @@ display: none;
 background: transparent url(http://a3.espncdn.com/prod/assets/icon_video_ie6.png) no-repeat 0 0!important;
 }
 
-.mod-mem-carousel ul li: hover div.vid-icon,
+.mod-mem-carousel ul li:hover div.vid-icon,
 .sc-videos .mod-mem-carousel ul li div.vid-icon {
 z-index: 5001;
 display: block;
@@ -14442,9 +14442,9 @@ font: 400 11px/25px helvetica,arial,sans-serif;
 }
 
 .mod-header #watch-espn-a>a,
-.mod-header #watch-espn-a>a: hover,
-.mod-header #watch-espn-a>a: visited,
-.mod-header #watch-espn-a>a: active {
+.mod-header #watch-espn-a>a:hover,
+.mod-header #watch-espn-a>a:visited,
+.mod-header #watch-espn-a>a:active {
 position: absolute;
 left: 0;
 top: 0;
@@ -14485,7 +14485,7 @@ height: 24px;
 line-height: 24px;
 }
 
-.mod-header #watch-espn-a>#channels>li: hover,
+.mod-header #watch-espn-a>#channels>li:hover,
 .mod-header #watch-espn-a>#channels>li.active {
 background-position: center -1px;
 }
@@ -14499,8 +14499,8 @@ background: transparent url(http://a1.espncdn.com/prod/assets/watchespn/sprite_n
 background-position: 0 -24px;
 }
 
-.mod-header #watch-espn-a>#channels>li>a: hover,
-.mod-header #watch-espn-a>#channels>li: hover>a,
+.mod-header #watch-espn-a>#channels>li>a:hover,
+.mod-header #watch-espn-a>#channels>li:hover>a,
 .mod-header #watch-espn-a>#channels>li.active>a {
 background-position: 0 -24px;
 border-bottom: 1px solid #fff;
@@ -14510,8 +14510,8 @@ border-bottom: 1px solid #fff;
 background-position: 0 -72px;
 }
 
-.mod-header #watch-espn-a>#channels>li#channel-espn2>a: hover,
-.mod-header #watch-espn-a>#channels>li#channel-espn2: hover>a,
+.mod-header #watch-espn-a>#channels>li#channel-espn2>a:hover,
+.mod-header #watch-espn-a>#channels>li#channel-espn2:hover>a,
 .mod-header #watch-espn-a>#channels>li#channel-espn2.active>a {
 background-position: 0 -72px;
 }
@@ -14520,8 +14520,8 @@ background-position: 0 -72px;
 background-position: 0 -120px;
 }
 
-.mod-header #watch-espn-a>#channels>li#channel-espnu>a: hover,
-.mod-header #watch-espn-a>#channels>li#channel-espnu: hover>a,
+.mod-header #watch-espn-a>#channels>li#channel-espnu>a:hover,
+.mod-header #watch-espn-a>#channels>li#channel-espnu:hover>a,
 .mod-header #watch-espn-a>#channels>li#channel-espnu.active>a {
 background-position: 0 -120px;
 }
@@ -14530,8 +14530,8 @@ background-position: 0 -120px;
 background-position: 0 -168px;
 }
 
-.mod-header #watch-espn-a>#channels>li#channel-espn3>a: hover,
-.mod-header #watch-espn-a>#channels>li#channel-espn3: hover>a,
+.mod-header #watch-espn-a>#channels>li#channel-espn3>a:hover,
+.mod-header #watch-espn-a>#channels>li#channel-espn3:hover>a,
 #watch-espn-a>#channels>li#channel-espn3.active>a {
 background-position: 0 -168px;
 }
@@ -14619,7 +14619,7 @@ margin: 0;
 color: #225db7;
 }
 
-.mod-header #watch-espn-a>#channels>li.channel>ul.showlist>li>.show-info a: hover {
+.mod-header #watch-espn-a>#channels>li.channel>ul.showlist>li>.show-info a:hover {
 text-decoration: underline;
 }
 
@@ -14705,8 +14705,8 @@ z-index: 5000;
 background-position: -80px 0;
 }
 
-.networks-mem.play-live-espn360: hover,
-.play-live-espn360: hover {
+.networks-mem.play-live-espn360:hover,
+.play-live-espn360:hover {
 background-position: -80px -66px;
 }
 
@@ -14715,8 +14715,8 @@ background-position: -80px -66px;
 background-position: 0 0;
 }
 
-.networks-mem.replay-espn360: hover,
-.replay-espn360: hover {
+.networks-mem.replay-espn360:hover,
+.replay-espn360:hover {
 background-position: 0 -66px;
 }
 
@@ -14844,7 +14844,7 @@ background-repeat: no-repeat;
 display: inline-block;
 }
 
-.fb_button a: hover {
+.fb_button a:hover {
 text-decoration: none;
 }
 
@@ -14855,10 +14855,10 @@ a.fb_button_rtl,
 text-decoration: none;
 }
 
-a.fb_button: active .fb_button_text,
-a.fb_button_rtl: active .fb_button_text,
-.fb_button: active .fb_button_text,
-.fb_button_rtl: active .fb_button_text {
+a.fb_button:active .fb_button_text,
+a.fb_button_rtl:active .fb_button_text,
+.fb_button:active .fb_button_text,
+.fb_button_rtl:active .fb_button_text {
 border-bottom: solid 1px #29447e;
 border-top: solid 1px #45619d;
 background: #4f6aa3;
@@ -14877,7 +14877,7 @@ padding: 3px 8px 3px 12px;
 margin-left: 38px;
 }
 
-a.fb_button_xlarge: active {
+a.fb_button_xlarge:active {
 background-position: left -99px;
 }
 
@@ -14890,7 +14890,7 @@ padding: 3px 8px 3px 12px;
 margin-right: 39px;
 }
 
-a.fb_button_xlarge_rtl: active {
+a.fb_button_xlarge_rtl:active {
 background-position: right -307px;
 }
 
@@ -14906,7 +14906,7 @@ margin-left: 24px;
 padding: 2px 6px 4px 6px;
 }
 
-a.fb_button_large: active {
+a.fb_button_large:active {
 background-position: left -163px;
 }
 
@@ -14918,7 +14918,7 @@ background-position: right -346px;
 margin-right: 25px;
 }
 
-a.fb_button_large_rtl: active {
+a.fb_button_large_rtl:active {
 background-position: right -371px;
 }
 
@@ -14929,7 +14929,7 @@ font-size: 11px;
 line-height: 14px;
 }
 
-a.fb_button_medium: active {
+a.fb_button_medium:active {
 background-position: left -210px;
 }
 
@@ -14943,7 +14943,7 @@ padding: 2px 6px 3px 6px;
 margin-right: 22px;
 }
 
-a.fb_button_medium_rtl: active {
+a.fb_button_medium_rtl:active {
 background-position: right -418px;
 }
 
@@ -14959,8 +14959,8 @@ padding: 2px 6px 3px;
 margin-left: 17px;
 }
 
-a.fb_button_small: active,
-.fb_button_small: active {
+a.fb_button_small:active,
+.fb_button_small:active {
 background-position: left -250px;
 }
 
@@ -14973,7 +14973,7 @@ padding: 2px 6px;
 margin-right: 18px;
 }
 
-a.fb_button_small_rtl: active {
+a.fb_button_small_rtl:active {
 background-position: right -458px;
 }
 
@@ -14999,10 +14999,10 @@ padding-bottom: 1px;
 margin: 0 10px 0 0;
 }
 
-a.fb_button_simple: hover .fb_button_text,
-a.fb_button_simple_rtl: hover .fb_button_text,
-.fb_button_simple: hover .fb_button_text,
-.fb_button_simple_rtl: hover .fb_button_text {
+a.fb_button_simple:hover .fb_button_text,
+a.fb_button_simple_rtl:hover .fb_button_text,
+.fb_button_simple:hover .fb_button_text,
+.fb_button_simple_rtl:hover .fb_button_text {
 text-decoration: underline;
 }
 
@@ -15027,7 +15027,7 @@ box-shadow: inset 0 0 2px rgba(255,255,255,.5);
 background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,.2)),color-stop(1,rgba(255,255,255,0))),url(http://a2.espncdn.com/prod/assets/arrow-4x8.png) 78px center no-repeat;
 }
 
-.tablet .btn-toggle-tablet: hover {
+.tablet .btn-toggle-tablet:hover {
 text-decoration: none;
 }
 
@@ -15294,7 +15294,7 @@ display: inline-block;
 background: transparent url(http://a1.espncdn.com/prod/assets/frontpage_scoreboard/fp_sb.png) no-repeat right -21px;
 }
 
-#scoreboard .mod-tabs .mod-header ul li.ui-tabs-selected a.fullLink: hover {
+#scoreboard .mod-tabs .mod-header ul li.ui-tabs-selected a.fullLink:hover {
 text-decoration: underline;
 }
 
@@ -15363,7 +15363,7 @@ display: none;
 }
 
 #scoreboard .game-links a,
-#scoreboard .game-links a: visited {
+#scoreboard .game-links a:visited {
 color: #000!important;
 font-family: Verdana;
 font-size: 9px;
@@ -15373,7 +15373,7 @@ width: 100%;
 padding: 2px 0 2px 0;
 }
 
-#scoreboard .game-links a: hover {
+#scoreboard .game-links a:hover {
 background: #fff;
 text-decoration: none;
 color: #000;
@@ -15582,12 +15582,12 @@ top: 1px;
 width: 20px;
 }
 
-#scoreboard .scores-prev: hover,
+#scoreboard .scores-prev:hover,
 #scoreboard .scores-prev-hover {
 background-position: -40px -60px;
 }
 
-#scoreboard .scores-next: hover,
+#scoreboard .scores-next:hover,
 #scoreboard .scores-next-hover {
 background-position: -100px -60px;
 }
@@ -16435,8 +16435,8 @@ padding-right: 6px;
 }
 
 .scoreStrip .playerInfo a,
-.scoreStrip .playerInfo a: hover,
-.scoreStrip .playerInfo a: visited {
+.scoreStrip .playerInfo a:hover,
+.scoreStrip .playerInfo a:visited {
 color: #FFF!important;
 }
 
@@ -16467,9 +16467,9 @@ top: 10px;
 }
 
 #my-scores .errormsg a,
-#my-scores .errormsg a: visited,
-#my-scores .errormsg a: link,
-#my-scores .errormsg a: active {
+#my-scores .errormsg a:visited,
+#my-scores .errormsg a:link,
+#my-scores .errormsg a:active {
 color: #FFF!important;
 font-weight: bold;
 }
@@ -16838,7 +16838,7 @@ border-radius: 3px;
 background-color: #900;
 }
 
-.mod-site-overlay input.btn-action: hover {
+.mod-site-overlay input.btn-action:hover {
 opacity: .85;
 filter: alpha(opacity=85);
 }
@@ -17046,7 +17046,7 @@ left: 42px;
 color: #888;
 }
 
-.mod-btn-toggle a: hover {
+.mod-btn-toggle a:hover {
 text-decoration: none;
 }
 
@@ -17162,7 +17162,7 @@ background-position: -84px 0;
 filter: alpha(opacity=40);
 }
 
-#colorbox.media_overlay #cboxClose: hover {
+#colorbox.media_overlay #cboxClose:hover {
 opacity: .8;
 filter: alpha(opacity=80);
 }
@@ -17335,7 +17335,7 @@ z-index: 6501;
 background: url('http://a1.espncdn.com/prod/assets/clear.png') 0 0 repeat;
 }
 
-#colorbox.media_overlay .mod-media-main .mod-content .img-preview: hover {
+#colorbox.media_overlay .mod-media-main .mod-content .img-preview:hover {
 cursor: pointer;
 }
 
@@ -17429,7 +17429,7 @@ cursor: pointer;
 background-position: 0 -51px;
 }
 
-#colorbox.media_overlay .mod-controls .pagination .btn-pager: hover {
+#colorbox.media_overlay .mod-controls .pagination .btn-pager:hover {
 opacity: .9;
 filter: alpha(opacity=90);
 }
@@ -17481,7 +17481,7 @@ background-position: -67px -75px;
 background-position: -73px -75px;
 }
 
-#colorbox.media_overlay .mod-controls a.btn-slideshow: hover {
+#colorbox.media_overlay .mod-controls a.btn-slideshow:hover {
 text-decoration: none;
 opacity: .9;
 filter: alpha(opacity=90);
@@ -17585,7 +17585,7 @@ opacity: .5;
 filter: alpha(opacity=50);
 }
 
-#colorbox.media_overlay .mod-social .mod-content .icon: hover,
+#colorbox.media_overlay .mod-social .mod-content .icon:hover,
 #colorbox.media_overlay .mod-social .mod-content .icon.fshare {
 opacity: 1;
 filter: alpha(opacity=100);
@@ -17612,7 +17612,7 @@ filter: alpha(opacity=80);
 -webkit-border-top-right-radius: 6px;
 }
 
-#colorbox.media_overlay .mod-slider .mod-header: hover,
+#colorbox.media_overlay .mod-slider .mod-header:hover,
 #colorbox.media_overlay .mod-slider .mod-header.open {
 cursor: pointer;
 opacity: 1;
@@ -17653,7 +17653,7 @@ margin: 4px;
 float: left;
 }
 
-#colorbox.media_overlay .mod-media-thumbnails .mod-content ul li: hover {
+#colorbox.media_overlay .mod-media-thumbnails .mod-content ul li:hover {
 border: 2px solid #777;
 }
 
@@ -17661,7 +17661,7 @@ border: 2px solid #777;
 border: 2px solid #fff;
 }
 
-#colorbox.media_overlay .mod-media-thumbnails .mod-content ul li a: hover,
+#colorbox.media_overlay .mod-media-thumbnails .mod-content ul li a:hover,
 #colorbox.media_overlay .mod-media-thumbnails .mod-content ul li.active a {
 opacity: .3;
 filter: alpha(opacity=30);
@@ -17727,11 +17727,11 @@ position: relative;
 float: left;
 }
 
-#colorbox.media_overlay .mod-more-media .mod-content ul li a: hover {
+#colorbox.media_overlay .mod-more-media .mod-content ul li a:hover {
 text-decoration: none;
 }
 
-#colorbox.media_overlay .mod-more-media .mod-content ul li a: hover img {
+#colorbox.media_overlay .mod-more-media .mod-content ul li a:hover img {
 opacity: .6;
 filter: alpha(opacity=60);
 }
@@ -17943,7 +17943,7 @@ opacity: .5;
 filter: alpha(opacity=50);
 }
 
-#colorbox.video_overlay .mod-video-rating .gray-stars .star: hover {
+#colorbox.video_overlay .mod-video-rating .gray-stars .star:hover {
 background-position: -90px -72px;
 opacity: 1;
 filter: alpha(opacity=100);
@@ -17970,7 +17970,7 @@ padding: 0;
 margin-top: 32px;
 }
 
-#colorbox.video_overlay .mod-vid-carousel .jcarousel-scroller: hover {
+#colorbox.video_overlay .mod-vid-carousel .jcarousel-scroller:hover {
 opacity: .9;
 filter: alpha(opacity=90);
 }
@@ -18017,12 +18017,12 @@ border-style: solid;
 border-width: 0 2px 2px;
 }
 
-#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li: hover div,
-#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li: hover h3 {
+#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li:hover div,
+#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li:hover h3 {
 border-color: #777;
 }
 
-#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li: hover a {
+#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li:hover a {
 text-decoration: none;
 }
 
@@ -18045,7 +18045,7 @@ top: 1px;
 border: 0;
 }
 
-#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li: hover img,
+#colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li:hover img,
 #colorbox.video_overlay .mod-vid-carousel .mod-carousel ul li.active img {
 opacity: .6;
 filter: alpha(opacity=60);
@@ -18070,7 +18070,7 @@ opacity: .8;
 filter: alpha(opacity=80);
 }
 
-#colorbox.video_overlay .mod-vid-carousel .mod-carousel .pagination a: hover {
+#colorbox.video_overlay .mod-vid-carousel .mod-carousel .pagination a:hover {
 opacity: 1;
 filter: alpha(opacity=100);
 }
@@ -18273,7 +18273,7 @@ width: 18px;
 background-position: 0 -33px;
 }
 
-#colorbox.photo_overlay .mod-paginator .controls a.page-prev: hover {
+#colorbox.photo_overlay .mod-paginator .controls a.page-prev:hover {
 background-position: -19px -33px;
 }
 
@@ -18281,7 +18281,7 @@ background-position: -19px -33px;
 background-position: -38px -33px;
 }
 
-#colorbox.photo_overlay .mod-paginator .controls a.page-prev-disabled: hover {
+#colorbox.photo_overlay .mod-paginator .controls a.page-prev-disabled:hover {
 background-position: -38px -33px;
 }
 
@@ -18289,7 +18289,7 @@ background-position: -38px -33px;
 background-position: -95px -33px;
 }
 
-#colorbox.photo_overlay .mod-paginator .controls a.page-next: hover {
+#colorbox.photo_overlay .mod-paginator .controls a.page-next:hover {
 background-position: -76px -33px;
 }
 
@@ -18297,7 +18297,7 @@ background-position: -76px -33px;
 background-position: -57px -33px;
 }
 
-#colorbox.photo_overlay .mod-paginator .controls a.page-next-disabled: hover {
+#colorbox.photo_overlay .mod-paginator .controls a.page-next-disabled:hover {
 background-position: -57px -33px;
 }
 
@@ -18410,7 +18410,7 @@ line-height: 13px;
 -webkit-border-radius: 3px;
 }
 
-#colorbox.dyk_overlay .mod-dyk-overlay .overlay-header .btn-refresh: hover {
+#colorbox.dyk_overlay .mod-dyk-overlay .overlay-header .btn-refresh:hover {
 text-decoration: none;
 opacity: .8;
 filter: alpha(opacity=80);
@@ -18424,7 +18424,7 @@ margin: 1px 3px 0 0;
 background-position: 0 -37px;
 }
 
-#colorbox.dyk_overlay .mod-dyk-overlay .overlay-header .btn-refresh span: hover {
+#colorbox.dyk_overlay .mod-dyk-overlay .overlay-header .btn-refresh span:hover {
 cursor: pointer;
 }
 
@@ -18450,7 +18450,7 @@ float: left;
 margin: 0 10px 0 0;
 }
 
-#colorbox.dyk_overlay .mod-tidbit-area ul.share li a: hover {
+#colorbox.dyk_overlay .mod-tidbit-area ul.share li a:hover {
 text-decoration: none;
 }
 
@@ -18547,7 +18547,7 @@ top: 6px;
 right: 6px;
 }
 
-#colorbox.dyk_overlay .mod-dyk-control ul li a.btn-control: hover {
+#colorbox.dyk_overlay .mod-dyk-control ul li a.btn-control:hover {
 opacity: .7;
 filter: alpha(opacity=70);
 cursor: pointer;
@@ -18660,7 +18660,7 @@ display: block;
 line-height: 13px;
 }
 
-#colorbox.dyk_overlay .mod-dyk-control .dd-category ul li a: hover {
+#colorbox.dyk_overlay .mod-dyk-control .dd-category ul li a:hover {
 text-decoration: none;
 color: #225db7;
 }
@@ -18805,11 +18805,11 @@ margin: 3px 0 0 0;
 color: blue;
 }
 
-#colorbox.dyk_overlay #personPopupContent a: hover {
+#colorbox.dyk_overlay #personPopupContent a:hover {
 color: blue;
 }
 
-#colorbox.dyk_overlay #personPopupContent a: visited {
+#colorbox.dyk_overlay #personPopupContent a:visited {
 color: blue;
 }
 
@@ -18861,11 +18861,11 @@ margin: 3px 0 0 0;
 color: blue;
 }
 
-#colorbox.dyk_overlay #personPopupContent1 a: hover {
+#colorbox.dyk_overlay #personPopupContent1 a:hover {
 color: blue;
 }
 
-#colorbox.dyk_overlay #personPopupContent1 a: visited {
+#colorbox.dyk_overlay #personPopupContent1 a:visited {
 color: blue;
 }
 

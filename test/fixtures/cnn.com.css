@@ -6800,7 +6800,7 @@ color: #004276;
 }
 
 .cnn_section_profile a:hover,
-.cnn_section_profile a: active {
+.cnn_section_profile a:active {
 color: #ca0002;
 }
 
@@ -10921,7 +10921,7 @@ padding: 0 0 5px 0;
 
 .rrHeader a:link,
 .rrHeader a:visited,
-.rrHeader a: active {
+.rrHeader a:active {
 color: #000;
 }
 
@@ -14061,7 +14061,7 @@ display: inline;
 
 .cnn_pmtvmodlnks1 a:link,
 .cnn_pmtvmodlnks1 a:visited,
-.cnn_pmtvmodlnks1 a: active {
+.cnn_pmtvmodlnks1 a:active {
 color: #e8e4cf;
 }
 
@@ -15587,7 +15587,7 @@ margin-left: 3px;
 
 .rrHeader a:link,
 .rrHeader a:visited,
-.rrHeader a: active {
+.rrHeader a:active {
 font-size: 14px;
 color: #fff;
 text-transform: uppercase;
@@ -15916,7 +15916,7 @@ margin-bottom: 7px;
 .cnn_sectbincntnt2 h4,
 .rrHeader a:link,
 .rrHeader a:visited,
-.rrHeader a: active {
+.rrHeader a:active {
 font-size: 13px;
 }
 

@@ -27,7 +27,7 @@ border-radius: 0;
 box-shadow: none;
 }
 
-.btn.no-shadow: active {
+.btn.no-shadow:active {
 -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.1);
 box-shadow: inset 0 2px 4px rgba(0,0,0,.1);
 }
@@ -67,7 +67,7 @@ border-color: #bbb;
 }
 
 .btn.active,
-.btn: active,
+.btn:active,
 .follow-combo.open .btn-user-actions,
 .user-dropdown.open,
 .btn.open,
@@ -144,7 +144,7 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#fedc4d',endC
 border-color: #ec8b11;
 }
 
-.signup-btn: active {
+.signup-btn:active {
 background-image: none;
 border-color: #ec8b11;
 }
@@ -188,7 +188,7 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#2daddc',endC
 border-color: #096eb3;
 }
 
-.primary-btn: active {
+.primary-btn:active {
 background-image: none;
 border-color: #096eb3;
 }
@@ -219,10 +219,10 @@ color: #fff;
 text-shadow: 0 -1px 1px rgba(0,0,0,.2);
 }
 
-.caution-btn: active,
-.following:hover .follow-btn: active,
-.following:hover .follow-button: active,
-.email-following:hover .email-follow-button: active {
+.caution-btn:active,
+.following:hover .follow-btn:active,
+.following:hover .follow-button:active,
+.email-following:hover .email-follow-button:active {
 background-image: none;
 border-color: #952f2a;
 }
@@ -919,7 +919,7 @@ right: 0;
 .nav .active>a,
 .btn-tweet,
 .btn-tweet:hover,
-.btn-tweet: active,
+.btn-tweet:active,
 .nav .active>a,
 .card-soccer .cover {
 background-image: url(../img/twitter_web_sprite_bgs.png);
@@ -950,7 +950,7 @@ filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
 background-position: 0 -170px;
 }
 
-.btn-tweet: active {
+.btn-tweet:active {
 background-position: 0 -200px;
 }
 
@@ -3595,7 +3595,7 @@ color: #fff;
 border-color: #000;
 }
 
-.btn-tweet: active {
+.btn-tweet:active {
 -webkit-box-shadow: inset 0 3px 6px rgba(0,0,0,.25);
 box-shadow: inset 0 3px 6px rgba(0,0,0,.25);
 }
@@ -4039,8 +4039,8 @@ background-image: -o-linear-gradient(#64abe5,#1d68a7);
 background-image: linear-gradient(#64abe5,#1d68a7);
 }
 
-.promptbird-below-black-bar .btn.call-to-action: active,
-.promptbird-dashboard-narrow .btn.call-to-action: active {
+.promptbird-below-black-bar .btn.call-to-action:active,
+.promptbird-dashboard-narrow .btn.call-to-action:active {
 background-repeat: repeat-x;
 background-image: -moz-linear-gradient(#155899,#3d8fd8);
 background-image: -ms-linear-gradient(#155899,#3d8fd8);
@@ -9169,7 +9169,7 @@ overflow: hidden;
 background: url(../img/temp_phoenix/sprite_icons-contentfe.png) no-repeat 0 -224px;
 }
 
-.upload-file a.thumbnail-close: active {
+.upload-file a.thumbnail-close:active {
 background: url(../img/temp_phoenix/sprite_icons-contentfe.png) no-repeat 0 -238px;
 }
 
@@ -9769,7 +9769,7 @@ box-shadow: none;
 .disabled,
 .disabled:hover,
 .disabled:focus,
-.disabled: active,
+.disabled:active,
 input[disabled],
 select[disabled],
 textarea[disabled],
@@ -9783,7 +9783,7 @@ cursor: not-allowed;
 }
 
 .disabled.btn,
-.disabled.btn: active {
+.disabled.btn:active {
 cursor: default;
 -webkit-box-shadow: none;
 box-shadow: none;
@@ -11281,7 +11281,7 @@ text-decoration: none;
 .card2 a,
 .card2 a:hover,
 .card2 a:focus,
-.card2 a: active {
+.card2 a:active {
 color: #0084b4;
 }
 
@@ -11470,26 +11470,26 @@ vertical-align: middle;
 .card2 .util-link-clean,
 .card2 .util-link-clean:hover,
 .card2 .util-link-clean:focus,
-.card2 .util-link-clean: active {
+.card2 .util-link-clean:active {
 text-decoration: none;
 }
 
 .card2 .util-link-complex:hover,
 .card2 .util-link-complex:focus,
-.card2 .util-link-complex: active {
+.card2 .util-link-complex:active {
 text-decoration: none;
 }
 
 .card2 .util-link-complex:hover .util-link-complex-target,
 .card2 .util-link-complex:focus .util-link-complex-target,
-.card2 .util-link-complex: active .util-link-complex-target {
+.card2 .util-link-complex:active .util-link-complex-target {
 text-decoration: underline;
 }
 
 .card2 .util-link-block,
 .card2 .util-link-block:hover,
 .card2 .util-link-block:focus,
-.card2 .util-link-block: active {
+.card2 .util-link-block:active {
 display: block;
 text-decoration: none;
 }
@@ -13845,7 +13845,7 @@ background: -ms-linear-gradient(90deg,#828282,#bdbdbd);
 background: linear-gradient(0deg,#828282,#bdbdbd);
 }
 
-.toggle-button: active {
+.toggle-button:active {
 -webkit-box-shadow: inset 0 1px #555;
 box-shadow: inset 0 1px #555;
 background: #555;
@@ -14528,7 +14528,7 @@ background-position: 0 0;
 border-color: #ed9200;
 }
 
-#phx-signup-form .sign-up-box input.promotional: active {
+#phx-signup-form .sign-up-box input.promotional:active {
 -webkit-box-shadow: inset 0 3px 7px rgba(0,0,0 .1),0 1px 2px rgba(0,0,0,0.05);
 box-shadow: inset 0 3px 7px rgba(0,0,0,0.1),0 1px 2px rgba(0,0,0,0.05);
 }
@@ -15757,7 +15757,7 @@ background-position: 0 0;
 background-position: 0 -178px;
 }
 
-.welcome-game-tweet-left: active {
+.welcome-game-tweet-left:active {
 background-position: 0 -356px;
 }
 
@@ -15769,7 +15769,7 @@ background-position: -395px 0;
 background-position: -395px -178px;
 }
 
-.welcome-game-tweet-right: active {
+.welcome-game-tweet-right:active {
 background-position: -395px -356px;
 }
 
@@ -16805,7 +16805,7 @@ margin-bottom: -5px;
 background-position: 0 -21px;
 }
 
-.wrapper-mobile_gallery .firefox-tweet-button: active {
+.wrapper-mobile_gallery .firefox-tweet-button:active {
 background-position: 0 -42px;
 }
 
@@ -20627,7 +20627,7 @@ width: 160px;
 margin: 10px auto;
 }
 
-.profile-edit-message .btn: active {
+.profile-edit-message .btn:active {
 box-shadow: none;
 }
 
@@ -21774,7 +21774,7 @@ color: #212121;
 text-decoration: none;
 }
 
-.ui-widget : active {
+.ui-widget :active {
 outline: 0;
 }
 

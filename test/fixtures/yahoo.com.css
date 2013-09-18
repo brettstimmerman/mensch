@@ -4399,7 +4399,7 @@ background-position: -651px -67px;
 
 .app .cta:hover,
 .app .cta:focus,
-.app .cta: active {
+.app .cta:active {
 background-color: #565c68;
 }
 
@@ -6536,8 +6536,8 @@ background-color: #fff;
 
 .type_fptoday .footer-bookends .y-nav-buttons .prev:focus,
 .type_fptoday .footer-bookends .y-nav-buttons .next:focus,
-.type_fptoday .footer-bookends .y-nav-buttons .prev: active,
-.type_fptoday .footer-bookends .y-nav-buttons .next: active {
+.type_fptoday .footer-bookends .y-nav-buttons .prev:active,
+.type_fptoday .footer-bookends .y-nav-buttons .next:active {
 outline: 1px dotted #565c68;
 }
 
@@ -7855,7 +7855,7 @@ top: 54px;
 .type_stream .star-article-liked,
 .type_stream .star-article-liked:hover,
 .type_stream .star-article-liked:focus,
-.type_stream .star-article-liked: active {
+.type_stream .star-article-liked:active {
 background-color: #61399d;
 }
 
