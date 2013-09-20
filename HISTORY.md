@@ -1,5 +1,9 @@
 # mensch history
 
+## 0.2.1 - 20 Sep 2013
+
+- Trim whitespace around grouped selectors.
+
 ## 0.2.0 - 18 Sep 2013
 
 - Correctly handle comments as children of at-groups. Fix #2
