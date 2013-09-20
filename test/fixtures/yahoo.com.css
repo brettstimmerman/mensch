@@ -351,7 +351,7 @@ position: relative;
 box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
 }
 
-.has-scrolled #masthead: :after {
+.has-scrolled #masthead::after {
 content: "";
 border-top: 1px solid #f4f4f4;
 border-bottom: 1px solid #adadad;
@@ -5580,7 +5580,7 @@ display: inline;
 white-space: nowrap;
 }
 
-.type_fptoday :focus {
+.type_fptoday:focus {
 outline: 0;
 }
 

@@ -519,10 +519,10 @@ q {
 quotes: none;
 }
 
-blockquote: before,
-blockquote: after,
-q: before,
-q: after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 content: '';
 content: none;
 }
@@ -777,8 +777,8 @@ background: #fff;
 color: #fff;
 }
 
-.clearfix: after,
-.container: after {
+.clearfix:after,
+.container:after {
 content: ".";
 display: block;
 height: 0;
@@ -6559,7 +6559,7 @@ background-color: #fff;
 position: relative;
 }
 
-.mod-page-actions li .count: before {
+.mod-page-actions li .count:before {
 content: url(http://a2.espncdn.com/prod/assets/count-caret-15.png);
 position: absolute;
 left: -6px;
@@ -6647,7 +6647,7 @@ filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endC
 background: linear-gradient(top,#fff 0,#d7d7d7 100%);
 }
 
-#page-actions-top .mod-page-actions li .count: before {
+#page-actions-top .mod-page-actions li .count:before {
 content: url(http://a2.espncdn.com/prod/assets/count-caret-20.png);
 position: absolute;
 left: -6px;

@@ -15505,11 +15505,11 @@ height: auto!important;
 color: #363635;
 }
 
-.cnn_mc2_headline a :hover {
+.cnn_mc2_headline a:hover {
 color: #f15a2a;
 }
 
-.cnn_mc2_headline a :visited {
+.cnn_mc2_headline a:visited {
 color: #8c8c8b;
 }
 
@@ -15528,7 +15528,7 @@ color: #363635;
 color: #f15a2a;
 }
 
-.cnn_mc2_blurb .cnn_mc2_5_blurb a :visited {
+.cnn_mc2_blurb .cnn_mc2_5_blurb a:visited {
 color: #8c8c8b;
 }
 
@@ -15541,7 +15541,7 @@ font-size: 11px;
 color: #f15a2a;
 }
 
-.nn_mc2node a :visited {
+.nn_mc2node a:visited {
 color: #8c8c8b;
 }
 

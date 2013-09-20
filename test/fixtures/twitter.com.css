@@ -14428,36 +14428,36 @@ box-shadow: 0 1px 0 #fff;
 padding: 0 0 5px 0;
 }
 
-#phx-signup-form :: -webkit-scrollbar {
+#phx-signup-form::-webkit-scrollbar {
 width: 9px;
 height: 9px;
 }
 
-#phx-signup-form :: -webkit-scrollbar-button: start: decrement,
-#phx-signup-form :: -webkit-scrollbar-button: end: increment {
+#phx-signup-form::-webkit-scrollbar-button: start: decrement,
+#phx-signup-form::-webkit-scrollbar-button: end: increment {
 display: block;
 height: 0;
 background-color: transparent;
 }
 
-#phx-signup-form :: -webkit-scrollbar-track-piece {
+#phx-signup-form::-webkit-scrollbar-track-piece {
 background-color: #fafafa;
 border-radius: 0 0 8px 8px;
 }
 
-#phx-signup-form :: -webkit-scrollbar-thumb: vertical {
+#phx-signup-form::-webkit-scrollbar-thumb: vertical {
 height: 50px;
 background-color: #999;
 border-radius: 8px;
 }
 
-#phx-signup-form :: -webkit-scrollbar-thumb: horizontal {
+#phx-signup-form::-webkit-scrollbar-thumb: horizontal {
 width: 50px;
 background-color: #999;
 border-radius: 8px;
 }
 
-#phx-signup-form :: -webkit-scrollbar-track-piece {
+#phx-signup-form::-webkit-scrollbar-track-piece {
 background-color: #f4f4f4;
 }
 
@@ -21774,7 +21774,7 @@ color: #212121;
 text-decoration: none;
 }
 
-.ui-widget :active {
+.ui-widget:active {
 outline: 0;
 }
 
