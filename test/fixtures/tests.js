@@ -111,6 +111,115 @@ exports['@charset'] = {
   }]
 };
 
+// -- @document ----------------------------------------------------------------
+
+exports['@document'] = {
+      css: ['@document url(http://www.w3.org/),' +
+                'url-prefix(http://www.w3.org/Style/),' +
+                'domain(mozilla.org),' +
+                'regexp("https:.*") {',
+            'body {',
+              'color: purple;',
+              'background: yellow;',
+            '}',
+          '}'].join(' '),
+
+      lex: [{
+        type: 'document',
+        name: 'url(http://www.w3.org/),' +
+                'url-prefix(http://www.w3.org/Style/),' +
+                'domain(mozilla.org),' +
+                'regexp("https:.*")',
+        start: { col: 1, line: 1 },
+        end: { col: 103, line: 1 }
+      }, {
+        type: 'selector',
+        start: { line: 1, col: 105 },
+        text: 'body',
+        end: { line: 1, col: 110 }
+      }, {
+        type: 'property',
+        start: { line: 1, col: 112 },
+        name: 'color',
+        value: 'purple',
+        end: { line: 1, col: 125 }
+      }, {
+        type: 'property',
+        start: { line: 1, col: 127 },
+        name: 'background',
+        value: 'yellow',
+        end: { line: 1, col: 145 }
+      }, {
+        type: 'end',
+        start: { line: 1, col: 147 },
+        end: { line: 1, col: 147 }
+      }, {
+        type: 'at-group-end',
+        start: { line: 1, col: 149 },
+        end: { line: 1, col: 149 }
+      }],
+
+      parse: [{
+        expect: {
+          type: "stylesheet",
+          stylesheet: {
+            rules: [{
+              type: 'document',
+              name: 'url(http://www.w3.org/),url-prefix(http://www.w3.org/Style/),domain(mozilla.org),regexp("https:.*")',
+              prefix: undefined,
+              rules: [{
+                type: 'rule',
+                selectors: ['body'],
+                declarations: [{
+                  type: 'property',
+                  name: 'color',
+                  value: 'purple',
+                }, {
+                  type: 'property',
+                  name: 'background',
+                  value: 'yellow',
+                }]
+              }]
+            }]
+          }
+        }
+      }, {
+        css: ['@-moz-document url(http://www.w3.org/),' +
+                  'url-prefix(http://www.w3.org/Style/),' +
+                  'domain(mozilla.org),' +
+                  'regexp("https:.*") {',
+                'body {',
+                  'color: purple;',
+                  'background: yellow;',
+                '}',
+              '}'].join(' '),
+
+        expect: {
+          type: "stylesheet",
+          stylesheet: {
+            rules: [{
+              type: 'document',
+              name: 'url(http://www.w3.org/),url-prefix(http://www.w3.org/Style/),domain(mozilla.org),regexp("https:.*")',
+              prefix: '-moz-',
+              rules: [{
+                type: 'rule',
+                selectors: ['body'],
+                declarations: [{
+                  type: 'property',
+                  name: 'color',
+                  value: 'purple',
+                }, {
+                  type: 'property',
+                  name: 'background',
+                  value: 'yellow',
+                }]
+              }]
+            }]
+          }
+        }
+      }]
+};
+
 // -- @import ------------------------------------------------------------------
 
 exports['@import'] = {
