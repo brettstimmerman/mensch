@@ -504,6 +504,46 @@ exports['@namespace'] = {
 
 // -- @page --------------------------------------------------------------------
 
+exports['@page'] = {
+  css: '@page :pseudo-class { margin: 2in; }',
+
+  lex: [{
+    type: 'page',
+    start: { line: 1, col: 1 },
+    name: ':pseudo-class',
+    end: { line: 1, col: 17 }
+  }, { type: 'property',
+    start: { line: 1, col: 19 },
+    name: 'margin',
+    value: '2in',
+    end: { line: 1, col: 30 }
+  }, { type: 'end',
+    start: { line: 1, col: 32 },
+    end: { line: 1, col: 32 }
+  }, { type: 'at-group-end',
+    start: { line: 1, col: 32 },
+    end: { line: 1, col: 32 }
+  }],
+
+  parse: [{
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: "page",
+          name: ":pseudo-class",
+          prefix: undefined,
+          declarations: [{
+            type: "property",
+            name: "margin",
+            value: "2in"
+          }]
+        }]
+      }
+    }
+  }]
+};
+
 // -- @supports ----------------------------------------------------------------
 
 exports['@supports'] = {

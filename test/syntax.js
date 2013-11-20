@@ -151,15 +151,3 @@ describe('General Syntax', function () {
   });
 
 });
-
-describe('@page', function () {
-  it('should work', function () {
-    var css = [
-      '@page :pseudo-class {',
-        'margin: 2in;',
-      '}'
-    ].join('\n');
-
-    ensure(css);
-  });
-});
