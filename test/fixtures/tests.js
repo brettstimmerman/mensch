@@ -350,6 +350,51 @@ exports['@media'] = {
   }]
 };
 
+// -- @namespace ---------------------------------------------------------------
+
+exports['@namespace'] = {
+  css: '@namespace url(http://www.w3.org/1999/xhtml); ' +
+       '@namespace svg url(http://www.w3.org/2000/svg); ' +
+       '@namespace "booga";',
+
+  lex: [{
+    type: 'namespace',
+    start: { line: 1, col: 1 },
+    value: 'url(http://www.w3.org/1999/xhtml)',
+    end: { line: 1, col: 36 }
+  }, {
+    type: 'namespace',
+    start: { line: 1, col: 38 },
+    value: 'svg url(http://www.w3.org/2000/svg)',
+    end: { line: 1, col: 75 }
+  }, {
+    type: 'namespace',
+    start: { line: 1, col: 77 },
+    value: '"booga"',
+    end: { line: 1, col: 86 }
+  }],
+
+  parse: [{
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: "namespace",
+          value: "url(http://www.w3.org/1999/xhtml)"
+        }, {
+          type: "namespace",
+          value: "svg url(http://www.w3.org/2000/svg)"
+        }, {
+          type: "namespace",
+          value: "\"booga\""
+        }]
+      }
+    }
+  }]
+};
+
+// -- @page --------------------------------------------------------------------
+
 // -- @supports ----------------------------------------------------------------
 
 exports['@supports'] = {

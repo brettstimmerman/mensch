@@ -1,16 +1,22 @@
 var assert = require('assert');
 var mensch = require('..');
 
-function ensure(css, expect) {
-  var ast = mensch.parse(css);
-  var out = mensch.stringify(ast).trim();
+function ensure(css, expect, options) {
+  if (typeof expect != 'string') {
+    options = expect;
+    expect = null;
+  }
 
   expect || (expect = css.trim());
+  options || (options = {});
+
+  var ast = mensch.parse(css, options);
+  var out = mensch.stringify(ast, options).trim();
 
   assert.equal(out, expect);
 }
 
-describe('Syntax', function () {
+describe('General Syntax', function () {
   describe('strings in selectors, and braces in strings', function () {
     it('should work', function () {
       var css = [
@@ -144,4 +150,16 @@ describe('Syntax', function () {
     });
   });
 
+});
+
+describe('@page', function () {
+  it('should work', function () {
+    var css = [
+      '@page :pseudo-class {',
+        'margin: 2in;',
+      '}'
+    ].join('\n');
+
+    ensure(css);
+  });
 });
