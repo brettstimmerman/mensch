@@ -27,6 +27,62 @@ describe('Syntax', function () {
     });
   });
 
+  describe('strings in values', function () {
+    it('should work', function () {
+      var css = [
+        '.sele {',
+          'content: "hel\\"lo";',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+
+      css = [
+        '.sele {',
+          'voice-family: "\\"}\\"";',
+          'voice-family: inherit;',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+
+      css = [
+        '.klass {',
+          '/* " */',
+          '/*  \' */',
+          '/* \\\' \\" \\*/',
+          "content: '\"';",
+          "content: '\\\"';",
+          'content: "\'";',
+          'content: "\\\'";',
+          "content: '/* dude \\*/';",
+          "content: '/* ';",
+          "background: url('\\\"');",
+          'content: "du\\\nde";',
+        '}'
+      ].join('\n');
+
+      var ast = mensch.parse(css, {comments: true});
+      var out = mensch.stringify(ast, {comments: true}).trim();
+
+      // Normalize extra newlines for comparison.
+      out = out.replace(/\n\n/g, '\n');
+
+      var expect = css.trim();
+      assert.equal(out, expect);
+
+      css = [
+        '.onemore {',
+          'content: "\\\"";',
+          'content: "\\\'";',
+          'content: "{}";',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+    });
+  });
+
   describe('unexpected braces and semi-colons', function () {
     it('should be ignored', function () {
       var css = [
