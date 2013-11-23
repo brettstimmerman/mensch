@@ -111,6 +111,115 @@ exports['@charset'] = {
   }]
 };
 
+// -- @document ----------------------------------------------------------------
+
+exports['@document'] = {
+      css: ['@document url(http://www.w3.org/),' +
+                'url-prefix(http://www.w3.org/Style/),' +
+                'domain(mozilla.org),' +
+                'regexp("https:.*") {',
+            'body {',
+              'color: purple;',
+              'background: yellow;',
+            '}',
+          '}'].join(' '),
+
+      lex: [{
+        type: 'document',
+        name: 'url(http://www.w3.org/),' +
+                'url-prefix(http://www.w3.org/Style/),' +
+                'domain(mozilla.org),' +
+                'regexp("https:.*")',
+        start: { col: 1, line: 1 },
+        end: { col: 103, line: 1 }
+      }, {
+        type: 'selector',
+        start: { line: 1, col: 105 },
+        text: 'body',
+        end: { line: 1, col: 110 }
+      }, {
+        type: 'property',
+        start: { line: 1, col: 112 },
+        name: 'color',
+        value: 'purple',
+        end: { line: 1, col: 125 }
+      }, {
+        type: 'property',
+        start: { line: 1, col: 127 },
+        name: 'background',
+        value: 'yellow',
+        end: { line: 1, col: 145 }
+      }, {
+        type: 'end',
+        start: { line: 1, col: 147 },
+        end: { line: 1, col: 147 }
+      }, {
+        type: 'at-group-end',
+        start: { line: 1, col: 149 },
+        end: { line: 1, col: 149 }
+      }],
+
+      parse: [{
+        expect: {
+          type: "stylesheet",
+          stylesheet: {
+            rules: [{
+              type: 'document',
+              name: 'url(http://www.w3.org/),url-prefix(http://www.w3.org/Style/),domain(mozilla.org),regexp("https:.*")',
+              prefix: undefined,
+              rules: [{
+                type: 'rule',
+                selectors: ['body'],
+                declarations: [{
+                  type: 'property',
+                  name: 'color',
+                  value: 'purple',
+                }, {
+                  type: 'property',
+                  name: 'background',
+                  value: 'yellow',
+                }]
+              }]
+            }]
+          }
+        }
+      }, {
+        css: ['@-moz-document url(http://www.w3.org/),' +
+                  'url-prefix(http://www.w3.org/Style/),' +
+                  'domain(mozilla.org),' +
+                  'regexp("https:.*") {',
+                'body {',
+                  'color: purple;',
+                  'background: yellow;',
+                '}',
+              '}'].join(' '),
+
+        expect: {
+          type: "stylesheet",
+          stylesheet: {
+            rules: [{
+              type: 'document',
+              name: 'url(http://www.w3.org/),url-prefix(http://www.w3.org/Style/),domain(mozilla.org),regexp("https:.*")',
+              prefix: '-moz-',
+              rules: [{
+                type: 'rule',
+                selectors: ['body'],
+                declarations: [{
+                  type: 'property',
+                  name: 'color',
+                  value: 'purple',
+                }, {
+                  type: 'property',
+                  name: 'background',
+                  value: 'yellow',
+                }]
+              }]
+            }]
+          }
+        }
+      }]
+};
+
 // -- @import ------------------------------------------------------------------
 
 exports['@import'] = {
@@ -343,6 +452,91 @@ exports['@media'] = {
               value: 'black',
               type: 'property'
             }]
+          }]
+        }]
+      }
+    }
+  }]
+};
+
+// -- @namespace ---------------------------------------------------------------
+
+exports['@namespace'] = {
+  css: '@namespace url(http://www.w3.org/1999/xhtml); ' +
+       '@namespace svg url(http://www.w3.org/2000/svg); ' +
+       '@namespace "booga";',
+
+  lex: [{
+    type: 'namespace',
+    start: { line: 1, col: 1 },
+    value: 'url(http://www.w3.org/1999/xhtml)',
+    end: { line: 1, col: 36 }
+  }, {
+    type: 'namespace',
+    start: { line: 1, col: 38 },
+    value: 'svg url(http://www.w3.org/2000/svg)',
+    end: { line: 1, col: 75 }
+  }, {
+    type: 'namespace',
+    start: { line: 1, col: 77 },
+    value: '"booga"',
+    end: { line: 1, col: 86 }
+  }],
+
+  parse: [{
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: "namespace",
+          value: "url(http://www.w3.org/1999/xhtml)"
+        }, {
+          type: "namespace",
+          value: "svg url(http://www.w3.org/2000/svg)"
+        }, {
+          type: "namespace",
+          value: "\"booga\""
+        }]
+      }
+    }
+  }]
+};
+
+// -- @page --------------------------------------------------------------------
+
+exports['@page'] = {
+  css: '@page :pseudo-class { margin: 2in; }',
+
+  lex: [{
+    type: 'page',
+    start: { line: 1, col: 1 },
+    name: ':pseudo-class',
+    end: { line: 1, col: 17 }
+  }, { type: 'property',
+    start: { line: 1, col: 19 },
+    name: 'margin',
+    value: '2in',
+    end: { line: 1, col: 30 }
+  }, { type: 'end',
+    start: { line: 1, col: 32 },
+    end: { line: 1, col: 32 }
+  }, { type: 'at-group-end',
+    start: { line: 1, col: 32 },
+    end: { line: 1, col: 32 }
+  }],
+
+  parse: [{
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: "page",
+          name: ":pseudo-class",
+          prefix: undefined,
+          declarations: [{
+            type: "property",
+            name: "margin",
+            value: "2in"
           }]
         }]
       }
