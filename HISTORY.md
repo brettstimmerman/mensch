@@ -1,5 +1,10 @@
 # mensch history
 
+## 0.3.0 - 23 Nov 2013
+
+- Improve handling of quotes in values. Closes #5
+- Add support for `@document` (and `@-moz-document`), `@namespace` and `@page`.
+
 ## 0.2.1 - 20 Sep 2013
 
 - Trim whitespace around grouped selectors.
