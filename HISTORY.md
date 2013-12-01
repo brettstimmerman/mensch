@@ -2,6 +2,7 @@
 
 ## HEAD
 
+- Retain whitespace in selectors. Closes #8
 - Add support for `@-ms-keyframes`.
 
 ## 0.3.0 - 23 Nov 2013
