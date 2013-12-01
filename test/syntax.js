@@ -206,4 +206,19 @@ describe('General Syntax', function () {
     });
   });
 
+  describe('whitespace within selectors', function () {
+    it('should be retained', function () {
+      var css = [
+        'body \t ',
+        'div \r ',
+        'span \f ',
+        'a {',
+          'color: red;',
+        '}'
+      ].join('\n');
+
+      ensure(css);
+    });
+  });
+
 });
