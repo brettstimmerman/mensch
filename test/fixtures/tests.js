@@ -402,6 +402,45 @@ exports['@keyframes'] = {
         }]
       }
     }
+  }, {
+    css: [
+      '@-ms-keyframes boom {',
+        'from {',
+          'background-position: 0 0;',
+        '}',
+        'to {',
+          'background-position: 100% 100%;',
+        '}',
+      '}'
+    ].join(' '),
+
+    expect: {
+      type: "stylesheet",
+      stylesheet: {
+        rules: [{
+          type: 'keyframes',
+          name: 'boom',
+          prefix: '-ms-',
+          rules: [{
+            type: 'rule',
+            selectors: ['from'],
+            declarations: [{
+                name: 'background-position',
+                type: 'property',
+                value: '0 0'
+            }]
+          }, {
+            type: 'rule',
+            selectors: ['to'],
+            declarations: [{
+              name: 'background-position',
+              type: 'property',
+              value: '100% 100%'
+            }]
+          }]
+        }]
+      }
+    }
   }]
 };
 

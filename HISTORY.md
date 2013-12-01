@@ -1,5 +1,9 @@
 # mensch history
 
+## HEAD
+
+- Add support for `@-ms-keyframes`.
+
 ## 0.3.0 - 23 Nov 2013
 
 - Improve handling of quotes in values. Closes #5
