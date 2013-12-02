@@ -1,6 +1,6 @@
 # mensch history
 
-## HEAD
+## 0.3.1 - 1 Dec 2013
 
 - Retain whitespace in selectors. Closes #8
 - Add support for `@-ms-keyframes`.
