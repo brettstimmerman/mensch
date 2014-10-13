@@ -9,7 +9,7 @@ exports.comment = {
     type: 'comment',
     text: ' body { color: black; } ',
     start: { line: 1, col: 1 },
-    end: { line: 1, col: 26 }
+    end: { line: 1, col: 28 }
   }],
 
   parse: [{
@@ -95,7 +95,7 @@ exports['@charset'] = {
     type: 'charset',
     value: '"UTF-8"',
     start: { col: 1, line: 1 },
-    end: { col: 10, line: 1 }
+    end: { col: 17, line: 1 }
   }],
 
   parse: [{
@@ -131,32 +131,32 @@ exports['@document'] = {
                 'domain(mozilla.org),' +
                 'regexp("https:.*")',
         start: { col: 1, line: 1 },
-        end: { col: 103, line: 1 }
+        end: { col: 111, line: 1 }
       }, {
         type: 'selector',
-        start: { line: 1, col: 105 },
+        start: { line: 1, col: 113 },
         text: 'body',
-        end: { line: 1, col: 110 }
+        end: { line: 1, col: 118 }
       }, {
         type: 'property',
-        start: { line: 1, col: 112 },
+        start: { line: 1, col: 120 },
         name: 'color',
         value: 'purple',
-        end: { line: 1, col: 125 }
+        end: { line: 1, col: 133 }
       }, {
         type: 'property',
-        start: { line: 1, col: 127 },
+        start: { line: 1, col: 135 },
         name: 'background',
         value: 'yellow',
-        end: { line: 1, col: 145 }
+        end: { line: 1, col: 153 }
       }, {
         type: 'end',
-        start: { line: 1, col: 147 },
-        end: { line: 1, col: 147 }
+        start: { line: 1, col: 155 },
+        end: { line: 1, col: 155 }
       }, {
         type: 'at-group-end',
-        start: { line: 1, col: 149 },
-        end: { line: 1, col: 149 }
+        start: { line: 1, col: 157 },
+        end: { line: 1, col: 157 }
       }],
 
       parse: [{
@@ -229,7 +229,7 @@ exports['@import'] = {
     type: 'import',
     value: '"foo.css" print',
     start: { col: 1, line: 1 },
-    end: { col: 18, line: 1 }
+    end: { col: 24, line: 1 }
   }],
 
   parse: [{
@@ -254,27 +254,27 @@ exports['@font-face'] = {
     type: 'font-face',
     name: '',
     start: { col: 1, line: 1 },
-    end: { col: 3, line: 1 }
+    end: { col: 12, line: 1 }
   }, {
     type: 'property',
     name: 'font-family',
     value: 'Gentium',
-    start: { col: 5, line: 1 },
-    end: { col: 25, line: 1 }
+    start: { col: 14, line: 1 },
+    end: { col: 34, line: 1 }
   }, {
     type: 'property',
     name: 'src',
     value: 'url(http://example.com/fonts/Gentium.ttf)',
-    start: { col: 27, line: 1 },
-    end: { col: 73, line: 1 }
+    start: { col: 36, line: 1 },
+    end: { col: 82, line: 1 }
   }, {
     type: 'end',
-    start: { col: 74, line: 1 },
-    end: { col: 74, line: 1 }
+    start: { col: 83, line: 1 },
+    end: { col: 83, line: 1 }
   }, {
     type: 'at-group-end',
-    start: { col: 74, line: 1 },
-    end: { col: 74, line: 1 }
+    start: { col: 83, line: 1 },
+    end: { col: 83, line: 1 }
   }],
 
   parse: [{
@@ -307,41 +307,41 @@ exports['@keyframes'] = {
     type: 'keyframes',
     name: 'foo',
     start: { line: 1, col: 1 },
-    end: { line: 1, col: 7 }
+    end: { line: 1, col: 16 }
   }, {
     type: 'selector',
     text: 'from',
-    start: { line: 1, col: 9 },
-    end: { line: 1, col: 14 }
+    start: { line: 1, col: 18 },
+    end: { line: 1, col: 23 }
   }, {
     type: 'property',
     name: 'opacity',
     value: '0',
-    start: { line: 1, col: 16 },
-    end: { line: 1, col: 26 }
+    start: { line: 1, col: 25 },
+    end: { line: 1, col: 35 }
   }, {
     type: 'end',
-    start: { line: 1, col: 28 },
-    end: { line: 1, col: 28 }
+    start: { line: 1, col: 37 },
+    end: { line: 1, col: 37 }
   }, {
     type: 'selector',
     text: 'to',
-    start: { line: 1, col: 30 },
-    end: { line: 1, col: 33 }
+    start: { line: 1, col: 39 },
+    end: { line: 1, col: 42 }
   }, {
     type: 'property',
     name: 'opacity',
     value: '1',
-    start: { line: 1, col: 35 },
-    end: { line: 1, col: 45 }
+    start: { line: 1, col: 44 },
+    end: { line: 1, col: 54 }
   }, {
     type: 'end',
-    start: { line: 1, col: 47 },
-    end: { line: 1, col: 47 }
+    start: { line: 1, col: 56 },
+    end: { line: 1, col: 56 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 49 },
-    end: { line: 1, col: 49 }
+    start: { line: 1, col: 58 },
+    end: { line: 1, col: 58 }
   }],
 
   parse: [{
@@ -453,26 +453,26 @@ exports['@media'] = {
     type: 'media',
     name: 'screen and (min-width: 700px)',
     start: { line: 1, col: 1 },
-    end: { line: 1, col: 33 }
+    end: { line: 1, col: 38 }
   }, {
     type: 'selector',
     text: 'body',
-    start: { line: 1, col: 35 },
-    end: { line: 1, col: 40 }
+    start: { line: 1, col: 40 },
+    end: { line: 1, col: 45 }
   }, {
     type: 'property',
     name: 'color',
     value: 'black',
-    start: { line: 1, col: 42 },
-    end: { line: 1, col: 54 }
+    start: { line: 1, col: 47 },
+    end: { line: 1, col: 59 }
   }, {
     type: 'end',
-    start: { line: 1, col: 56 },
-    end: { line: 1, col: 56 }
+    start: { line: 1, col: 61 },
+    end: { line: 1, col: 61 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 58 },
-    end: { line: 1, col: 58 }
+    start: { line: 1, col: 63 },
+    end: { line: 1, col: 63 }
   }],
 
   parse: [{
@@ -509,17 +509,17 @@ exports['@namespace'] = {
     type: 'namespace',
     start: { line: 1, col: 1 },
     value: 'url(http://www.w3.org/1999/xhtml)',
-    end: { line: 1, col: 36 }
+    end: { line: 1, col: 45 }
   }, {
     type: 'namespace',
-    start: { line: 1, col: 38 },
+    start: { line: 1, col: 47 },
     value: 'svg url(http://www.w3.org/2000/svg)',
-    end: { line: 1, col: 75 }
+    end: { line: 1, col: 93 }
   }, {
     type: 'namespace',
-    start: { line: 1, col: 77 },
+    start: { line: 1, col: 95 },
     value: '"booga"',
-    end: { line: 1, col: 86 }
+    end: { line: 1, col: 113 }
   }],
 
   parse: [{
@@ -550,18 +550,18 @@ exports['@page'] = {
     type: 'page',
     start: { line: 1, col: 1 },
     name: ':pseudo-class',
-    end: { line: 1, col: 17 }
+    end: { line: 1, col: 21 }
   }, { type: 'property',
-    start: { line: 1, col: 19 },
+    start: { line: 1, col: 23 },
     name: 'margin',
     value: '2in',
-    end: { line: 1, col: 30 }
+    end: { line: 1, col: 34 }
   }, { type: 'end',
-    start: { line: 1, col: 32 },
-    end: { line: 1, col: 32 }
+    start: { line: 1, col: 36 },
+    end: { line: 1, col: 36 }
   }, { type: 'at-group-end',
-    start: { line: 1, col: 32 },
-    end: { line: 1, col: 32 }
+    start: { line: 1, col: 36 },
+    end: { line: 1, col: 36 }
   }],
 
   parse: [{
@@ -592,26 +592,26 @@ exports['@supports'] = {
     type: 'supports',
     name: '(display: table-cell)',
     start: { line: 1, col: 1 },
-    end: { line: 1, col: 25 }
+    end: { line: 1, col: 33 }
   }, {
     type: 'selector',
     text: 'body',
-    start: { line: 1, col: 27 },
-    end: { line: 1, col: 32 }
+    start: { line: 1, col: 35 },
+    end: { line: 1, col: 40 }
   }, {
     type: 'property',
     name: 'color',
     value: 'black',
-    start: { line: 1, col: 34 },
-    end: { line: 1, col: 46 }
+    start: { line: 1, col: 42 },
+    end: { line: 1, col: 54 }
   }, {
     type: 'end',
-    start: { line: 1, col: 48 },
-    end: { line: 1, col: 48 }
+    start: { line: 1, col: 56 },
+    end: { line: 1, col: 56 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 50 },
-    end: { line: 1, col: 50 }
+    start: { line: 1, col: 58 },
+    end: { line: 1, col: 58 }
   }],
 
   parse: [{
@@ -646,21 +646,21 @@ exports['@viewport'] = {
     type: 'viewport',
     name: '',
     start: { col: 1, line: 1 },
-    end: { col: 3, line: 1 }
+    end: { col: 11, line: 1 }
   }, {
     type: 'property',
     name: 'width',
     value: '320px auto',
-    start: { col: 5, line: 1 },
-    end: { col: 22, line: 1 }
+    start: { col: 13, line: 1 },
+    end: { col: 30, line: 1 }
   }, {
     type: 'end',
-    start: { col: 23, line: 1 },
-    end: { col: 23, line: 1 }
+    start: { col: 31, line: 1 },
+    end: { col: 31, line: 1 }
   }, {
     type: 'at-group-end',
-    start: { col: 23, line: 1 },
-    end: { col: 23, line: 1 }
+    start: { col: 31, line: 1 },
+    end: { col: 31, line: 1 }
   }],
 
   parse: [{
@@ -700,55 +700,55 @@ exports['nested @-groups'] = {
     type: 'media',
     name: 'print',
     start: { line: 1, col: 1 },
-    end: { line: 1, col: 9 }
+    end: { line: 1, col: 14 }
   }, {
     type: 'font-face',
     name: '',
-    start: { line: 1, col: 11 },
-    end: { line: 1, col: 13 }
+    start: { line: 1, col: 16 },
+    end: { line: 1, col: 27 }
   }, {
     type: 'property',
     name: 'font-family',
     value: 'Gentium',
-    start: { line: 1, col: 15 },
-    end: { line: 1, col: 35 }
+    start: { line: 1, col: 29 },
+    end: { line: 1, col: 49 }
   }, {
     type: 'property',
     name: 'src',
     value: 'url(http://example.com/fonts/Gentium.ttf)',
-    start: { line: 1, col: 37 },
-    end: { line: 1, col: 83 }
+    start: { line: 1, col: 51 },
+    end: { line: 1, col: 97 }
   }, {
     type: 'end',
-    start: { line: 1, col: 85 },
-    end: { line: 1, col: 85 }
+    start: { line: 1, col: 99 },
+    end: { line: 1, col: 99 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 85 },
-    end: { line: 1, col: 85 }
+    start: { line: 1, col: 99 },
+    end: { line: 1, col: 99 }
   }, {
     type: 'viewport',
     name: '',
-    start: { line: 1, col: 87 },
-    end: { line: 1, col: 89 }
+    start: { line: 1, col: 101 },
+    end: { line: 1, col: 111 }
   }, {
     type: 'property',
     name: 'width',
     value: '320px auto',
-    start: { line: 1, col: 91 },
-    end: { line: 1, col: 108 }
+    start: { line: 1, col: 113 },
+    end: { line: 1, col: 130 }
   }, {
     type: 'end',
-    start: { line: 1, col: 110 },
-    end: { line: 1, col: 110 }
+    start: { line: 1, col: 132 },
+    end: { line: 1, col: 132 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 110 },
-    end: { line: 1, col: 110 }
+    start: { line: 1, col: 132 },
+    end: { line: 1, col: 132 }
   }, {
     type: 'at-group-end',
-    start: { line: 1, col: 112 },
-    end: { line: 1, col: 112 }
+    start: { line: 1, col: 134 },
+    end: { line: 1, col: 134 }
   }],
 
   parse: [{
