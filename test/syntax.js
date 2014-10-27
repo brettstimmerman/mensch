@@ -310,5 +310,26 @@ describe('General Syntax', function () {
   	  ensure(css);
   	});
   });
+  
+  describe('lexer whitespace handing', function() {
+  	it('should keep tabs in values', function() {
+  		var css = [
+  		  'a {',
+  		  'border-width: 2px 3px\t4px 5px;',
+  		  '}'
+  	  ].join('\n');
+  	  
+  	  ensure(css);
+  	});
+  	it('should keep newlines in values', function() {
+  		var css = [
+  		  'a {',
+  		  'border-width: 2px 3px\n4px 5px;',
+  		  '}'
+  	  ].join('\n');
+  	  
+  	  ensure(css);
+  	});
+  });
 
 });
