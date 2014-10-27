@@ -220,5 +220,59 @@ describe('General Syntax', function () {
       ensure(css);
     });
   });
+  
+  describe('closing brackets in a declaration', function() {
+  	it('should take precedence over value parsing', function() {
+  		var css = [
+  		  'body {background: ;}',
+        '#yo {display: block;}'
+  	  ].join('\n');
+
+      var expect = [
+        'body {}',
+        '',
+        '#yo {',
+        'display: block;',
+        '}'
+      ].join('\n');
+  	  
+  	  ensure(css, expect);
+  	});
+
+  	it('should take precedence over declaration parsing', function() {
+  		var css = [
+  		  'body {background:}',
+        '#yo {display: block;}'
+  	  ].join('\n');
+
+      var expect = [
+        'body {}',
+        '',
+        '#yo {',
+        'display: block;',
+        '}'
+      ].join('\n');
+  	  
+  	  ensure(css, expect);
+  	});
+  });
+  
+  describe('semicolon in a declaration', function() {
+  	it('should take precedence over value expectation', function() {
+  		var css = [
+  		  'body {background:;line-height:10px;}'
+  	  ].join('\n');
+
+      var expect = [
+        'body {',
+        'line-height: 10px;',
+        '}'
+      ].join('\n');
+  	  
+  	  ensure(css, expect);
+  	});
+  });
+  
+  
 
 });
