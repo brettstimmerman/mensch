@@ -273,6 +273,42 @@ describe('General Syntax', function () {
   	});
   });
   
+  describe('opening and closing brackets in comments', function() {
+  	it('should be ignored', function() {
+  		var css = [
+  		  '@media tty {',
+  		  'i {',
+  		  'color: /* } */ black;',
+  		  '}',
+  		  '}',
+  		  '',
+  		  'a {',
+  		  'color: white;',
+  		  '}'
+  	  ].join('\n');
+
+  	  var expect = css.replace('/* } */ ', '');
+  	  
+  	  ensure(css, expect);
+  	});
+  });
   
+  describe('opening and closing brackets in strings', function() {
+  	it('should be ignored', function() {
+  		var css = [
+  		  '@media tty {',
+  		  'i {',
+  		  'content: "\\";/*" "*/}} a { color: black; } /*";',
+  		  '}',
+  		  '}',
+  		  '',
+  		  'a {',
+  		  'color: white;',
+  		  '}'
+  	  ].join('\n');
+  	  
+  	  ensure(css);
+  	});
+  });
 
 });
