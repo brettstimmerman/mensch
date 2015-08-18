@@ -1,5 +1,14 @@
 # mensch history
 
+## 0.3.2 - 18 Aug 2015
+
+- Fixed column/line computation for comments and at-rules (Fix #15)
+- Closing } and ; now takes precedence over declaration value parsing (Fix #14)
+- Ignore curly braces in strings (Fix #13)
+- Keep \n and \t inside values and consider them "whitespace" (Fix #12)
+- Fixed column count in positions for rows after the first line (Fix #18)
+- Enabled running test suite under Windows (CRLF vs LF issues)
+
 ## 0.3.1 - 1 Dec 2013
 
 - Retain whitespace in selectors. Closes #8
