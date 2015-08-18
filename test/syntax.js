@@ -220,5 +220,116 @@ describe('General Syntax', function () {
       ensure(css);
     });
   });
+  
+  describe('closing brackets in a declaration', function() {
+    it('should take precedence over value parsing', function() {
+      var css = [
+        'body {background: ;}',
+        '#yo {display: block;}'
+      ].join('\n');
+
+      var expect = [
+        'body {}',
+        '',
+        '#yo {',
+        'display: block;',
+        '}'
+      ].join('\n');
+      
+      ensure(css, expect);
+    });
+
+    it('should take precedence over declaration parsing', function() {
+      var css = [
+        'body {background:}',
+        '#yo {display: block;}'
+      ].join('\n');
+
+      var expect = [
+        'body {}',
+        '',
+        '#yo {',
+        'display: block;',
+        '}'
+      ].join('\n');
+      
+      ensure(css, expect);
+    });
+  });
+  
+  describe('semicolon in a declaration', function() {
+    it('should take precedence over value expectation', function() {
+      var css = [
+        'body {background:;line-height:10px;}'
+      ].join('\n');
+
+      var expect = [
+        'body {',
+        'line-height: 10px;',
+        '}'
+      ].join('\n');
+      
+      ensure(css, expect);
+    });
+  });
+  
+  describe('opening and closing brackets in comments', function() {
+    it('should be ignored', function() {
+      var css = [
+        '@media tty {',
+        'i {',
+        'color: /* } */ black;',
+        '}',
+        '}',
+        '',
+        'a {',
+        'color: white;',
+        '}'
+      ].join('\n');
+
+      var expect = css.replace('/* } */ ', '');
+      
+      ensure(css, expect);
+    });
+  });
+  
+  describe('opening and closing brackets in strings', function() {
+    it('should be ignored', function() {
+      var css = [
+        '@media tty {',
+        'i {',
+        'content: "\\";/*" "*/}} a { color: black; } /*";',
+        '}',
+        '}',
+        '',
+        'a {',
+        'color: white;',
+        '}'
+      ].join('\n');
+      
+      ensure(css);
+    });
+  });
+  
+  describe('lexer whitespace handing', function() {
+    it('should keep tabs in values', function() {
+      var css = [
+        'a {',
+        'border-width: 2px 3px\t4px 5px;',
+        '}'
+      ].join('\n');
+      
+      ensure(css);
+    });
+    it('should keep newlines in values', function() {
+      var css = [
+        'a {',
+        'border-width: 2px 3px\n4px 5px;',
+        '}'
+      ].join('\n');
+      
+      ensure(css);
+    });
+  });
 
 });

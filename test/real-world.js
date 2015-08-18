@@ -9,12 +9,12 @@ describe('Real world CSS', function () {
 
   ['cnn', 'espn', 'plus.google', 'twitter', 'yahoo'].forEach(function (name) {
     var file = path.join(__dirname, 'fixtures', name + '.com.css');
-    var css = fs.readFileSync(file, 'utf-8').trim();
+    var css = fs.readFileSync(file, 'utf-8').trim().replace(/\r\n/g, '\n');
     var size = (css.length / 1024).toFixed();
 
     it(name + '.com [' + size + ' kb]', function () {
       var ast = mensch.parse(css, {comments: true});
-      var out = mensch.stringify(ast, {comments: true});
+      var out = mensch.stringify(ast, {comments: true}).replace(/\r\n/g, '\n');
 
       DEBUG && debug(css, out);
 
