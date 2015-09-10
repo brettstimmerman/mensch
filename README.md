@@ -120,3 +120,9 @@ might not be 100% compatible with other CSS parsers. Here it is in a nutshell:
 Mensch is based on several existing CSS parsers, but
 [nzakas/parser-lib](https://github.com/nzakas/parser-lib) and
 [visionmedia/css](https://github.com/visionmedia/css) are notable influences.
+
+# known users
+
+[voidlabs/mosaico](https://github.com/voidlabs/mosaico) uses Mensch parser to parse custom-flavored CSS rules in email templates and make the template editable: positions, comment parsing, multiple declarations for the same property have been keys to the choice of Mensch!
+
+Please let us know if you use Mensch in your library!
