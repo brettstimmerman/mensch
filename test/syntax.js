@@ -332,4 +332,25 @@ describe('General Syntax', function () {
     });
   });
 
+  describe('when using weird chars in property values', function() {
+
+    it('should keep internal spaces', function() {
+      var css = [
+        'body {',
+        '  background-color:( yellow;',
+        '  background-color:@ yellow;',
+        '  background-color:* yellow;',
+        '  background-color:/ yellow;',
+        '  background-color:{ yellow;',
+        '  background-color:) yellow;',
+        '  background-color:: yellow;',
+        '}'
+      ].join('\n');
+
+      var expect = css.replace(/  background-color:/g,'background-color: ');
+
+      ensure(css, expect);
+    });
+  });
+
 });
