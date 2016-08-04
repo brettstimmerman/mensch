@@ -1,5 +1,10 @@
 # mensch history
 
+## 0.3.3 - 04 Aug 2016
+
+- Added Bower.json
+- Preserve property spacing when value starts with "special/unexpected" chars '(@*/{):'.
+
 ## 0.3.2 - 18 Aug 2015
 
 - Fixed column/line computation for comments and at-rules (Fix #15)
