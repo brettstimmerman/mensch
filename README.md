@@ -125,4 +125,6 @@ Mensch is based on several existing CSS parsers, but
 
 [voidlabs/mosaico](https://github.com/voidlabs/mosaico) uses Mensch parser to parse custom-flavored CSS rules in email templates and make the template editable: positions, comment parsing, multiple declarations for the same property have been keys to the choice of Mensch!
 
+[Automattic/juice](https://github.com/Automattic/juice) moved to Mensch CSS parser since 3.0 release in order to fix dozen of issues with the previous parser, expecially with support for "multiple properties declarations" in the same ruleset and with invalid values.
+
 Please let us know if you use Mensch in your library!
