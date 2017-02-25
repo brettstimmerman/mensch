@@ -828,7 +828,7 @@ exports.position = {
           }],
           position: {
             start: { line: 1, col: 1 },
-            end: { line: 1, col: 6 }
+            end: { line: 1, col: 22 }
           }
         }]
       }
