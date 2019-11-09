@@ -1,7 +1,7 @@
 {
   "name": "mensch",
   "main": "index.js",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "homepage": "https://github.com/brettstimmerman/mensch",
   "authors": [
     "Brett Stimmerman <brettstimmerman@gmail.com>"

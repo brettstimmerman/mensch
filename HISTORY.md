@@ -1,5 +1,9 @@
 # mensch history
 
+## 0.3.4 - 09 Nov 2019
+
+- Fix global leak and stringify indentation
+
 ## 0.3.3 - 04 Aug 2016
 
 - Added Bower.json
