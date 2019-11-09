@@ -7,11 +7,13 @@ describe('Parse with options.position=true', function () {
       var css = 'body p {}';
       var ast = mensch.parse(css, { comment: true, position: true });
       assert.deepEqual(ast.stylesheet.rules[0].position, { start: { line: 1, col: 1 }, end: { line: 1, col: 8 } });
-      var css = 'body /* comment */p {}';
-      var ast = mensch.parse(css, { comment: true, position: true });
+
+      css = 'body /* comment */p {}';
+      ast = mensch.parse(css, { comment: true, position: true });
       assert.deepEqual(ast.stylesheet.rules[0].position, { start: { line: 1, col: 1 }, end: { line: 1, col: 21 } });
-      var css = 'body /* multiline \n comment */p {}';
-      var ast = mensch.parse(css, { comment: true, position: true });
+
+      css = 'body /* multiline \n comment */p {}';
+      ast = mensch.parse(css, { comment: true, position: true });
       assert.deepEqual(ast.stylesheet.rules[0].position, { start: { line: 1, col: 1 }, end: { line: 2, col: 14 } });
     });
   });
@@ -28,7 +30,7 @@ describe('Parse with options.position=true', function () {
       var ast = mensch.parse(css, { comment: true, position: true });
       assert.deepEqual(ast.stylesheet.rules[0].position, { start: { line: 1, col: 1 }, end: { line: 1, col: 10 } });
       assert.deepEqual(ast.stylesheet.rules[1].position, { start: { line: 2, col: 1 }, end: { line: 2, col: 10 } });
-    })
+    });
     it('should have same column numbering in first and second line and for selector/properties', function() {
       var css = 'selector {\nprop: val;\n}\nselector {\nprop: val;\n}';
       var ast = mensch.parse(css, { comment: true, position: true });
@@ -36,6 +38,6 @@ describe('Parse with options.position=true', function () {
       assert.deepEqual(ast.stylesheet.rules[0].declarations[0].position, { start: { line: 2, col: 1 }, end: { line: 2, col: 10 } });
       assert.deepEqual(ast.stylesheet.rules[1].position, { start: { line: 4, col: 1 }, end: { line: 4, col: 10 } });
       assert.deepEqual(ast.stylesheet.rules[1].declarations[0].position, { start: { line: 5, col: 1 }, end: { line: 5, col: 10 } });
-    })
+    });
   });
 });
