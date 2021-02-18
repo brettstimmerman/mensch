@@ -4,6 +4,7 @@ var assert = require('assert');
 var mensch = require('..');
 
 describe('Real world CSS', function () {
+  this.timeout(5000);
   var fs = require('fs');
   var path = require('path');
 
