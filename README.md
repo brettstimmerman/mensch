@@ -1,4 +1,4 @@
-# mensch ![Node.js CI](https://github.com/brettstimmerman/mensch/workflows/Node.js%20CI/badge.svg) [![Build Status](https://secure.travis-ci.org/brettstimmerman/mensch.png?branch=master)](http://travis-ci.org/brettstimmerman/mensch)
+# mensch [![Node.js CI](https://github.com/brettstimmerman/mensch/workflows/Node.js%20CI/badge.svg)](https://github.com/brettstimmerman/mensch/actions/workflows/ci.yaml)
 
 A decent CSS parser.
 
