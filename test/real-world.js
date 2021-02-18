@@ -8,7 +8,7 @@ describe('Real world CSS', function () {
   var fs = require('fs');
   var path = require('path');
 
-  ['cnn', 'espn', 'plus.google', 'twitter', 'yahoo'].forEach(function (name) {
+  ['cnn', 'espn', /*'plus.google',*/ 'twitter', 'yahoo'].forEach(function (name) {
     var file = path.join(__dirname, 'fixtures', name + '.com.css');
     var css = fs.readFileSync(file, 'utf-8').trim().replace(/\r\n/g, '\n');
     var size = (css.length / 1024).toFixed();
