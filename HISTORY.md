@@ -1,5 +1,9 @@
 # mensch history
 
+## 0.3.5 - 29 Aug 2022
+
+- Fix parse selector with css `:not()`
+
 ## 0.3.4 - 09 Nov 2019
 
 - Fix global leak and stringify indentation
