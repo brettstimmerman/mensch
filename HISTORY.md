@@ -2,6 +2,7 @@
 
 ## 0.3.6 - 11 Feb 2023
 
+- Fix parse selector with css `:is()`
 - Fix nested @ tags
 
 ## 0.3.5 - 29 Aug 2022
