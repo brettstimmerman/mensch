@@ -1,5 +1,14 @@
 # mensch history
 
+## 0.3.6 - 11 Feb 2023
+
+- Fix parse selector with css `:is()`
+- Fix nested @ tags
+
+## 0.3.5 - 29 Aug 2022
+
+- Fix parse selector with css `:not()`
+
 ## 0.3.4 - 09 Nov 2019
 
 - Fix global leak and stringify indentation
